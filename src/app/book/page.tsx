@@ -122,10 +122,10 @@ export default function BookPage() {
             <p className="text-sm text-ink-300">
               Prefer email?{" "}
               <a
-                href="mailto:hello@strohmpartners.com"
+                href="mailto:hi@strohmpartners.com"
                 className="text-ink-100 underline-offset-4 hover:underline"
               >
-                hello@strohmpartners.com
+                hi@strohmpartners.com
               </a>
             </p>
           </div>

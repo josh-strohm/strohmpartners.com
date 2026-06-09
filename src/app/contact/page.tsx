@@ -108,6 +108,38 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
+
+              <div className="rounded-2xl bg-ink-700/70 border border-ink-400/30 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.7)] p-8">
+                <h3 className="font-display text-2xl text-ink-50">
+                  Need support?
+                </h3>
+                <p className="mt-3 text-[15px] text-ink-200 leading-relaxed pretty">
+                  Current clients can reach out for support directly. We're here to help.
+                </p>
+                <dl className="mt-6 flex flex-col gap-5 text-[15px]">
+                  <div>
+                    <dt className="font-mono text-xs uppercase tracking-[0.18em] text-ink-300">
+                      Email Support
+                    </dt>
+                    <dd className="mt-1.5">
+                      <a
+                        href="mailto:help@strohmpartners.com"
+                        className="text-ink-50 hover:text-accent-300 transition-colors underline-offset-4 hover:underline"
+                      >
+                        help@strohmpartners.com
+                      </a>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-mono text-xs uppercase tracking-[0.18em] text-ink-300">
+                      Phone Support
+                    </dt>
+                    <dd className="mt-1.5 text-ink-50">
+                      (814) 931-3981
+                    </dd>
+                  </div>
+                </dl>
+              </div>
             </aside>
           </div>
         </Container>

@@ -3,7 +3,7 @@
  */
 
 export const siteContent = {
-  contactEmail: "hello@strohmpartners.com",
+  contactEmail: "hi@strohmpartners.com",
   contactPhone: "", // add if/when available
   businessHours: "Mon to Fri · 9am to 6pm CT",
 };

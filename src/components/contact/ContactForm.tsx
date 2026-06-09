@@ -192,10 +192,10 @@ export function ContactForm() {
         >
           Something went wrong sending your message. Please email{" "}
           <a
-            href="mailto:hello@strohmpartners.com"
+            href="mailto:help@strohmpartners.com"
             className="underline underline-offset-2"
           >
-            hello@strohmpartners.com
+            help@strohmpartners.com
           </a>{" "}
           directly.
         </div>

@@ -88,7 +88,7 @@ const sections = [
           <strong className="text-ink-50">Cancellation Procedure:</strong> To
           cancel your subscription and prevent the next billing cycle from
           charging, you must submit a written cancellation request via email
-          to <a href="mailto:hi@strohmpartners.com" className="text-accent-300 hover:text-accent-200 transition-colors">hi@strohmpartners.com</a> at least 5 business
+          to <a href="mailto:help@strohmpartners.com" className="text-accent-300 hover:text-accent-200 transition-colors">help@strohmpartners.com</a> at least 5 business
           days prior to your renewal date.
         </p>
         <p>
@@ -114,8 +114,8 @@ const sections = [
         <ul className="list-disc pl-5 flex flex-col gap-2 marker:text-accent-500">
           <li>
             Please contact our client support team immediately at{" "}
-            <a href="mailto:hi@strohmpartners.com" className="text-accent-300 hover:text-accent-200 transition-colors">
-              hi@strohmpartners.com
+            <a href="mailto:help@strohmpartners.com" className="text-accent-300 hover:text-accent-200 transition-colors">
+              help@strohmpartners.com
             </a>
             . We will respond within 24 hours to review your feedback.
           </li>

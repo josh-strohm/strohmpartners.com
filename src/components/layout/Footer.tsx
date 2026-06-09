@@ -18,6 +18,14 @@ const linkGroups = [
       { label: "Services overview", href: "/services" },
     ],
   },
+  {
+    title: "Legal",
+    links: [
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Refund & Cancellation", href: "/refund-policy" },
+    ],
+  },
 ];
 
 export function Footer() {
@@ -25,7 +33,7 @@ export function Footer() {
     <footer className="relative mt-32 border-t border-ink-700/50 bg-ink-950">
       <Container className="py-16 lg:py-20">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
-          <div className="md:col-span-6 flex flex-col gap-5">
+          <div className="md:col-span-4 flex flex-col gap-5">
             <Wordmark />
             <p className="text-ink-200 max-w-md text-[15px] leading-relaxed">
               Your dedicated AI partner. I work with small and medium-sized businesses
@@ -40,7 +48,7 @@ export function Footer() {
           </div>
 
           {linkGroups.map((group) => (
-            <div key={group.title} className="md:col-span-3 flex flex-col gap-4">
+            <div key={group.title} className="md:col-span-2 flex flex-col gap-4 md:col-start-auto">
               <h4 className="font-mono text-xs uppercase tracking-[0.18em] text-ink-300">
                 {group.title}
               </h4>

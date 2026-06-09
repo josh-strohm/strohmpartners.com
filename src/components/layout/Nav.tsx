@@ -41,7 +41,7 @@ export function Nav() {
           : "bg-transparent"
       )}
     >
-        <div className="mx-auto flex h-32 max-w-7xl items-center justify-between px-6 sm:px-8 lg:px-12">
+        <div className="mx-auto flex h-28 max-w-7xl items-center justify-between px-6 sm:px-8 lg:px-12">
         <Wordmark />
 
         <nav className="hidden md:flex items-center gap-1">

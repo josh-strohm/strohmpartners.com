@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Strohm Partners LLC — Website
 
-## Getting Started
+The official website for **Strohm Partners LLC**, an AI consultancy helping small and medium-sized businesses identify where AI can help, and deliver plans and solutions tailored to their needs.
 
-First, run the development server:
+## Project status
+
+🟢 **Initial build complete** — 5 pages scaffolded, design system in place, ready for review.
+See [PLAN.md](./PLAN.md) for the full plan and [references.md](./references.md) for the design references that informed it.
+
+## Tech stack
+
+- **Next.js 16.2** (App Router, TypeScript, Turbopack)
+- **Tailwind CSS v4** (with custom design tokens)
+- **Framer Motion** for animations
+- **Geist Sans / Geist Mono** (UI) + **Instrument Serif** (display) via `next/font/google`
+- **react-hook-form + zod** for the contact form
+- **clsx + tailwind-merge** for class composition
+- **N8N** for contact form intake (webhook URL set via env var)
+
+## Pages
+
+- `/` — Home
+- `/about` — About
+- `/services` — Services
+- `/contact` — Contact (form posts to N8N webhook)
+- `/book` — Book a discovery call (embedded Google Calendar)
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file in the project root with:
 
-## Learn More
+```bash
+# Contact form webhook (N8N). When unset, the form simulates success
+# (logs payload to console) so it's still usable in dev.
+NEXT_PUBLIC_N8N_WEBHOOK_URL="https://your-n8n-instance.com/webhook/YOUR_WEBHOOK_ID"
+```
 
-To learn more about Next.js, take a look at the following resources:
+When the env var contains the placeholder `YOUR_N8N_WEBHOOK_URL` (or is missing), the form short-circuits and shows the success state without actually posting.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Build & deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm run start
+```
 
-## Deploy on Vercel
+Recommended host: **Vercel** (free tier, instant deploys). Connect the repo at
+vercel.com/new and the env var above.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## File map
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/
+│   ├── layout.tsx          root layout: nav, footer, fonts
+│   ├── page.tsx            home
+│   ├── about/page.tsx
+│   ├── services/page.tsx
+│   ├── contact/page.tsx
+│   ├── book/page.tsx
+│   ├── not-found.tsx
+│   └── globals.css         design tokens
+├── components/
+│   ├── ui/                 Button, Card, Container, SectionHeader
+│   ├── layout/             Nav, Footer, CTABand
+│   ├── home/               Hero, ValueStrips, ServicesPreview, HowWeWork, SocialProof
+│   └── contact/            ContactForm
+├── content/                page copy as TS modules (easy to edit)
+├── lib/                    utils, motion variants
+└── ...
+```
+
+## Editing copy
+
+Page copy lives in `src/content/` as TypeScript modules. Edit those files to update page text without touching layout/components.
+
+## License
+
+Proprietary — © Strohm Partners LLC. All rights reserved.

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 
 export const metadata: Metadata = {
@@ -57,17 +58,13 @@ export default function BookPage() {
         <Container size="md">
           <div className="rounded-3xl bg-paper shadow-[0_30px_80px_-20px_rgba(0,0,0,0.5),0_0_0_1px_rgba(15,19,32,0.06)] overflow-hidden">
             <div className="px-4 sm:px-6 pt-6 pb-2 flex items-center justify-between border-b border-ink-100">
-              <div className="flex items-center gap-2 text-ink-700">
-                <span
-                  aria-hidden
-                  className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-gradient-to-br from-accent-400 to-accent-600"
-                >
-                  <span className="font-display text-[12px] leading-none text-white">S</span>
-                </span>
-                <span className="font-display text-[15px] text-ink-900">
-                  Strohm <span className="text-accent-600">Partners</span>
-                </span>
-              </div>
+              <Image
+                src="/strohmpartners-logo-nobg.png"
+                alt="Strohm Partners"
+                width={140}
+                height={32}
+                className="h-14 w-auto"
+              />
               <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-ink-500">
                 30-min · Google Meet
               </span>

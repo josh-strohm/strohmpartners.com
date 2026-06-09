@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Scroll-reveal wrapper. **Currently a pass-through** (renders children
- * directly) — scroll-reveal animation is disabled while we sort out a
+ * directly) | scroll-reveal animation is disabled while we sort out a
  * reliable implementation. Content is always visible.
  *
  * Keeping this component as a no-op so existing imports keep working

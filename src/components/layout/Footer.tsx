@@ -36,13 +36,13 @@ export function Footer() {
           <div className="md:col-span-4 flex flex-col gap-5">
             <Wordmark />
             <p className="text-ink-200 max-w-md text-[15px] leading-relaxed">
-              Your dedicated AI partner. I work with small and medium-sized businesses
-              to find where AI saves time, cuts costs, and drives growth.
+              Your AI partner for small and medium-sized businesses. I find where AI
+              saves time, cuts costs, and helps your team focus on what matters.
             </p>
             <div className="flex items-center gap-2 text-sm text-ink-300">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-success animate-pulse" />
               <span className="font-mono text-xs uppercase tracking-wider">
-                Currently accepting new clients
+                Currently taking on new clients
               </span>
             </div>
           </div>
@@ -73,7 +73,7 @@ export function Footer() {
             © {new Date().getFullYear()} Strohm Partners LLC. All rights reserved.
           </p>
           <p className="text-xs text-ink-300 font-mono uppercase tracking-wider">
-            Built with care · One client at a time
+            Built with care · one business at a time
           </p>
         </div>
       </Container>

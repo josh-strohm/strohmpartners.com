@@ -5,8 +5,8 @@ import { siteContent } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description:
-    "Get in touch with Strohm Partners. I respond to every message personally within one business day.",
+    description:
+      "Get in touch with Strohm Partners. I read and respond to every message personally, usually within one business day."
 };
 
 export default function ContactPage() {
@@ -28,8 +28,9 @@ export default function ContactPage() {
             Get in <span className="italic text-accent-300">touch.</span>
           </h1>
           <p className="mt-8 text-lg sm:text-xl text-ink-200 max-w-2xl leading-relaxed pretty">
-            I respond to every message personally within one business day. Tell
-            me a little about your business and what you're working on.
+            I read and respond to every message personally, usually within one
+            business day. Tell me a bit about your business and what you're
+            wrestling with.
           </p>
         </Container>
       </section>
@@ -91,12 +92,12 @@ export default function ContactPage() {
                   <span className="font-mono text-xs uppercase tracking-[0.18em] text-accent-300">
                     Prefer to talk live?
                   </span>
-                  <h3 className="mt-3 font-display text-2xl text-ink-50 leading-tight">
+                  <h3 className="font-display text-2xl text-ink-50 leading-tight">
                     Book a 30-minute discovery call.
                   </h3>
                   <p className="mt-3 text-[15px] text-ink-200 leading-relaxed pretty">
-                    Skip the email back-and-forth. Pick a time that works for
-                    you.
+                    Skip the email ping-pong. Pick a time that works for you and
+                    we'll talk live.
                   </p>
                   <a
                     href="/book"

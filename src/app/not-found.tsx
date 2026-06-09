@@ -18,8 +18,8 @@ export default function NotFound() {
             That page <span className="italic text-accent-300">doesn't exist.</span>
           </h1>
           <p className="mt-6 text-lg text-ink-200 max-w-xl leading-relaxed pretty">
-            The link might be old, or I may have moved things around. Let's get
-            you back to somewhere useful.
+            That link might be old, or I may have moved things around. Let's get
+            you back to somewhere that actually works.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Button href="/" variant="primary" size="md">

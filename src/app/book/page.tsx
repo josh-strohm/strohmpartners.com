@@ -4,22 +4,22 @@ import { Container } from "@/components/ui/Container";
 
 export const metadata: Metadata = {
   title: "Book a call",
-  description:
-    "Book a 30-minute discovery call with Strohm Partners. No pitch, no pressure, just a conversation about your business.",
+    description:
+      "Book a 30-minute discovery call with Strohm Partners. No pitch, no pressure. Just a real conversation about your business and where AI might help."
 };
 
 const expectations = [
   {
     title: "A real conversation",
-    body: "No deck, no pitch. We talk about your business, your goals, and the problems you're trying to solve.",
+    body: "No slide deck, no sales pitch. We talk about your business, what's working, what's not, and where you wish you had more time.",
   },
   {
     title: "Honest assessment",
-    body: "I'll tell you whether AI is actually the right tool for what you need, and if it's not, what to do instead.",
+    body: "I'll tell you straight up whether AI is the right move for you right now, or if you'd be better off fixing something else first.",
   },
   {
-    title: "Next steps, clear",
-    body: "You'll leave the call knowing exactly what working together would look like, or knowing I'm not the right fit.",
+    title: "Clear next steps",
+    body: "You'll leave the call knowing exactly what working together looks like, or knowing I'm not the right fit. Either way, you win.",
   },
 ];
 
@@ -29,7 +29,7 @@ const CALENDAR_SRC =
 export default function BookPage() {
   return (
     <>
-      {/* Page hero — keeps the dark site shell */}
+      {/* Page hero | keeps the dark site shell */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-mesh" aria-hidden />
         <div
@@ -45,13 +45,13 @@ export default function BookPage() {
             Book a <span className="italic text-accent-300">discovery call.</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-ink-200 max-w-2xl mx-auto leading-relaxed pretty">
-            Pick a time that works for you. I'll learn about your business and
-            we'll talk about where AI might help.
+            Pick a time that works for you. We'll talk about your business, where
+            you're spending too much time, and whether AI can actually help.
           </p>
         </Container>
       </section>
 
-      {/* LIGHT SECTION — calendar wrapper has a light surface so the
+      {/* LIGHT SECTION | calendar wrapper has a light surface so the
           Google Calendar embed's white UI is fully visible. We transition
           from the dark site into a light "card" then back to dark. */}
       <section className="pb-16">
@@ -96,7 +96,7 @@ export default function BookPage() {
         </Container>
       </section>
 
-      {/* What to expect — back on dark */}
+      {/* What to expect | back on dark */}
       <section className="py-16 lg:py-24 border-t border-ink-700/40">
         <Container>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">

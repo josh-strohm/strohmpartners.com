@@ -80,7 +80,7 @@ export function ContactForm() {
           Send a message
         </h2>
         <p className="mt-2 text-sm text-ink-300">
-          We respond within one business day.
+          I respond within one business day.
         </p>
       </div>
 
@@ -137,12 +137,12 @@ export function ContactForm() {
           htmlFor="message"
           className="block font-mono text-xs uppercase tracking-[0.18em] text-ink-300 mb-2"
         >
-          What can we help with?
+          What can I help with?
         </label>
         <textarea
           id="message"
           rows={5}
-          placeholder="A few sentences about your business and what you're exploring…"
+          placeholder="A few sentences about your business and what you're wrestling with…"
           {...register("message")}
           className={cn(
             "w-full rounded-xl bg-ink-900/60 border px-4 py-3 text-[15px] text-ink-50",
@@ -160,7 +160,7 @@ export function ContactForm() {
 
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
         <p className="text-xs text-ink-300">
-          By submitting, you agree to be contacted about your inquiry.
+          By submitting, you're saying it's okay for me to reach out about your inquiry.
         </p>
         <button
           type="submit"

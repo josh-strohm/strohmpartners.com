@@ -1,6 +1,6 @@
 /**
  * Shared Framer Motion variants for the Strohm Partners site.
- * Keep these gentle — "editorial motion," not "bouncy tech demo."
+ * Keep these gentle | "editorial motion," not "bouncy tech demo."
  */
 
 import type { Variants, Transition } from "framer-motion";

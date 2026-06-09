@@ -83,7 +83,7 @@ export function Hero() {
             { k: "1", v: "Dedicated AI partner" },
             { k: "100%", v: "Personal attention" },
             { k: "0", v: "Vendor lock-in commitments" },
-            { k: "5–500", v: "Employee range I serve" },
+            { k: "1 to 250", v: "Employee range I serve" },
           ].map((s) => (
             <div
               key={s.k}

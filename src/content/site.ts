@@ -5,5 +5,5 @@
 export const siteContent = {
   contactEmail: "hello@strohmpartners.com",
   contactPhone: "", // add if/when available
-  businessHours: "Mon–Fri · 9am–6pm CT",
+  businessHours: "Mon to Fri · 9am to 6pm CT",
 };

@@ -121,20 +121,20 @@ export const homeContent = {
   socialProofTitle:
     "Real businesses. Real results.",
   socialProofDescription:
-    "I've built websites and digital tools for businesses across a range of industries. Here are a couple of recent projects.",
+    "I've built websites and backend automations for businesses across a range of industries. Here are a couple of recent projects.",
   portfolio: [
     {
-      tag: "Website",
+      tag: "Website + Automation",
       title: "JT3 Hauling",
       description:
-        "Designed and built a full website with hosting for a hauling company. They went from zero online presence to a site that brings in new customers.",
+        "Designed and built a full website for a hauling company, with backend automation that sends contact form submissions straight to the owner's inbox and fires off an automated email reply to the visitor. Potential customers get a response without the client lifting a finger.",
       url: "https://www.jt3hauling.com",
     },
     {
-      tag: "Website + hosting",
+      tag: "Website + Automation",
       title: "Mrs. Red Bottoms Cleaning",
       description:
-        "Built a custom website with ongoing hosting and maintenance for a cleaning company. Clean, professional, and easy for the client to manage on their own.",
+        "Built a custom website for a cleaning company with the same backend automation: contact form submissions route to the owner's inbox and visitors receive an automated email reply with a custom message from the business. New inquiries get handled smoothly from the moment they come in.",
       url: "https://www.mrsredbottomscleaning.com",
     },
   ],

@@ -31,32 +31,29 @@ export function SocialProof() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 mt-4">
-            {[1, 2, 3].map((i) => (
-              <div
-                key={i}
-                className="relative overflow-hidden rounded-2xl bg-ink-700/70 border border-ink-400/30 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.7)] p-8"
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-4">
+            {homeContent.portfolio.map((item) => (
+              <a
+                key={item.title}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden rounded-2xl bg-ink-700/70 border border-ink-400/30 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.7)] p-8 transition-all duration-300 hover:bg-ink-700 hover:border-ink-400/50"
               >
-                <span className="font-mono text-xs uppercase tracking-[0.18em] text-ink-300">
-                  Testimonial · {String(i).padStart(2, "0")}
+                <span className="font-mono text-xs uppercase tracking-[0.18em] text-accent-300">
+                  {item.tag}
                 </span>
-                <p className="mt-5 font-display text-2xl text-ink-200 italic leading-snug">
-                  &ldquo;Client quote goes here. Josh became a true partner and
-                  found time we didn&rsquo;t know we had.&rdquo;
+                <h3 className="mt-3 font-display text-2xl text-ink-50">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-[15px] text-ink-200 leading-relaxed">
+                  {item.description}
                 </p>
-                <div className="mt-6 flex items-center gap-3">
-                  <div
-                    aria-hidden
-                    className="h-10 w-10 rounded-full bg-gradient-to-br from-accent-400 to-accent-700 flex items-center justify-center font-mono text-xs text-ink-950"
-                  >
-                    {String.fromCharCode(64 + i * 4)}
-                  </div>
-                  <div>
-                    <div className="text-sm text-ink-50">Client Name</div>
-                    <div className="text-xs text-ink-300">Title, Company</div>
-                  </div>
-                </div>
-              </div>
+                <span className="mt-4 inline-flex items-center gap-1.5 text-sm text-accent-300 group-hover:text-accent-200 transition-colors">
+                  Visit site
+                  <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
+                </span>
+              </a>
             ))}
           </div>
         </div>

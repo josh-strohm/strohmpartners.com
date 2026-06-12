@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "What does it cost?",
-    a: "Assessments are a fixed fee. Builds are scoped and priced after the assessment. I'll give you honest ranges on the discovery call so there are no surprises.",
+    a: "The AI Opportunity Assessment starts at $1,497. It includes 2-3 weeks of deep analysis, a clear map of where AI fits, and ROI estimates based on your actual numbers. After that, build phases are scoped and priced separately — I'll give you honest ranges before you commit to anything.",
   },
   {
     q: "What if AI isn't the right answer for us?",
@@ -98,6 +98,14 @@ export default function ServicesPage() {
                     </li>
                   ))}
                 </ul>
+                <div className="mt-8">
+                  <a
+                    href={s.tag.includes("Phase 01") ? "/book" : "/contact"}
+                    className="inline-flex items-center gap-2 rounded-full bg-accent-500/10 border border-accent-500/30 px-5 py-2.5 text-sm text-accent-300 hover:bg-accent-500/20 hover:text-accent-200 transition-colors"
+                  >
+                    {s.tag.includes("Phase 01") ? "Book a free AI audit" : "Get in touch"} →
+                  </a>
+                </div>
               </div>
             ))}
           </div>
@@ -177,7 +185,7 @@ export default function ServicesPage() {
         eyebrow="Start with a call"
         title="Ready to see where AI fits your business?"
         description="A 30-minute conversation is the easiest way to figure out if we're a good fit. No pitch, no pressure. Just two people talking shop."
-        primaryCta={{ label: "Book a discovery call", href: "/book" }}
+        primaryCta={{ label: "Book a free AI audit", href: "/book" }}
         secondaryCta={{ label: "Send a message instead", href: "/contact" }}
       />
     </>

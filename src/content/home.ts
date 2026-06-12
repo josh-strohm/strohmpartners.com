@@ -10,40 +10,40 @@ export const homeContent = {
     titleEnd: "business.",
     description:
       "I work shoulder-to-shoulder with small and medium-sized businesses to find the places where AI can save time, cut costs, and free up your team to do the work that actually matters. No confusing language, no cookie-cutter playbooks. Just honest advice and real help getting things done.",
-    primaryCta: { label: "Book a discovery call", href: "/book" },
+    primaryCta: { label: "Book a free AI audit", href: "/book" },
     secondaryCta: { label: "See what I do", href: "/services" },
   },
 
   valueStrips: [
     {
-      title: "Real human attention",
+      title: "Direct access to the founder",
       description:
-        "You work directly with me, not some junior analyst you've never met. When we talk, I'm actually listening.",
+        "You work directly with me — not a junior analyst or account manager. When you call, I answer.",
     },
     {
-      title: "Your AI partner",
+      title: "AI that fits your business",
       description:
-        "I embed myself in your world, learn how your business runs, and stick around to help you actually use AI, not just plan for it.",
+        "I learn how your business actually runs, then find the tools that stick. No cookie-cutter playbooks.",
     },
     {
-      title: "No strings attached",
+      title: "No vendor kickbacks",
       description:
-        "If a tool doesn't make sense for you, I'll say so. I don't push software I get kickbacks from.",
+        "If a tool doesn't make sense for you, I'll say so. I recommend what's right, not what pays me a commission.",
     },
     {
-      title: "I build, not just talk",
+      title: "I build it with you",
       description:
-        "I don't drop a 40-page report and vanish. I roll up my sleeves and build the thing with you.",
+        "I don't drop a report and vanish. I design, build, and train your team until the work is actually done.",
     },
   ],
 
   servicesEyebrow: "What I do",
-  servicesTitle: "Your AI partner, every step.",
+  servicesTitle: "A clear path from confusion to results.",
   servicesDescription:
     "I start by understanding your business, then I stay with you through the messy middle until AI is actually making your life easier. No handoffs, no consultants who disappear.",
   services: [
     {
-      tag: "Phase 01",
+      tag: "Phase 01 · From $1,497",
       title: "AI Opportunity Assessment",
       summary:
         "We spend 2 to 3 weeks looking under the hood of your business. I find the spots where AI can save your team hours every week or help you close more deals without hiring more people.",
@@ -117,11 +117,27 @@ export const homeContent = {
     },
   ],
 
-  socialProofEyebrow: "Who I work with",
+  socialProofEyebrow: "Work I've done",
   socialProofTitle:
-    "A real partner for businesses the big firms don't even notice.",
+    "Real businesses. Real results.",
   socialProofDescription:
-    "I work with SMBs in professional services, manufacturing, e-commerce, and more. The kind of businesses that need hands-on help, not another deck from a consulting firm.",
+    "I've built websites and digital tools for businesses across industries. Here are a few recent projects.",
+  portfolio: [
+    {
+      tag: "Website",
+      title: "Service-based business",
+      description:
+        "Designed and built a complete website with hosting setup. The client went from no online presence to a professional digital storefront.",
+      url: "#",
+    },
+    {
+      tag: "Website + hosting",
+      title: "Small business client",
+      description:
+        "Built a custom website with ongoing hosting and maintenance. The site represents the business professionally and is easy for the client to manage.",
+      url: "#",
+    },
+  ],
   industries: [
     "Professional services",
     "Light manufacturing",

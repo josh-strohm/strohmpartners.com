@@ -192,7 +192,7 @@ export default function AboutPage() {
         eyebrow="Get in touch"
         title="Let's talk about your business."
         description="Whether you're just curious about AI or already trying things out, I'd love to hear what you're working on and where you're stuck."
-        primaryCta={{ label: "Book a discovery call", href: "/book" }}
+        primaryCta={{ label: "Book a free AI audit", href: "/book" }}
         secondaryCta={{ label: "Read about my services", href: "/services" }}
       />
     </>

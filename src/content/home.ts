@@ -125,17 +125,17 @@ export const homeContent = {
   portfolio: [
     {
       tag: "Website",
-      title: "Service-based business",
+      title: "JT3 Hauling",
       description:
-        "Designed and built a complete website with hosting setup. The client went from no online presence to a professional digital storefront.",
-      url: "#",
+        "Designed and built a complete website with hosting setup for a hauling company. The client went from no online presence to a professional digital storefront.",
+      url: "https://www.jt3hauling.com",
     },
     {
       tag: "Website + hosting",
-      title: "Small business client",
+      title: "Mrs. Red Bottoms Cleaning",
       description:
-        "Built a custom website with ongoing hosting and maintenance. The site represents the business professionally and is easy for the client to manage.",
-      url: "#",
+        "Built a custom website with ongoing hosting and maintenance for a cleaning company. The site represents the business professionally and is easy for the client to manage.",
+      url: "https://www.mrsredbottomscleaning.com",
     },
   ],
   industries: [

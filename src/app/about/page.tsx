@@ -7,21 +7,21 @@ import { CTABand } from "@/components/layout/CTABand";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "I'm Josh Strohm, founder of Strohm Partners. I work hands-on with small and medium-sized businesses as their AI partner, finding where AI saves time, cuts costs, and actually helps the team."
+    "I'm Josh Strohm, founder of Strohm Partners. I work directly with small and medium-sized businesses as their AI partner, finding where AI saves time, cuts costs, and helps the team."
 };
 
 const values = [
   {
     title: "Keep it simple",
-            body: "I'd rather build something your team actually uses every day than something fancy that sits in a folder. AI for the sake of AI is just expensive noise.",
+            body: "I'd rather build something your team uses every day than something fancy that sits in a folder. If AI isn't the right fix, I'll tell you that upfront.",
   },
   {
     title: "Your business comes first",
-            body: "I don't push a specific tool or vendor. I pick what fits your team, your budget, and your workflow, even if it's not the shiny option everyone's talking about."
+            body: "I don't push a specific tool or vendor. I pick what fits your team, your budget, and your workflow, even if it's not the option getting all the hype."
   },
   {
     title: "Talk like humans",
-            body: "Strategy documents full of fancy words don't help anyone. I explain things in plain language so your whole team knows what we're doing and why."
+            body: "Strategy docs full of buzzwords don't help anyone. I explain things in plain language so your whole team knows what we're doing and why."
   },
   {
     title: "Built to last",
@@ -51,10 +51,10 @@ export default function AboutPage() {
                 <span className="italic text-accent-300">AI partner.</span>
               </h1>
               <p className="mt-8 text-lg sm:text-xl text-ink-200 max-w-2xl leading-relaxed pretty">
-                I'm Josh Strohm, founder of Strohm Partners. I work shoulder-to-
-                shoulder with small and medium-sized businesses to find where AI
-                can save time, cut costs, and free up their teams. Then I roll up
-                my sleeves and help make it happen.
+                I'm Josh Strohm, founder of Strohm Partners. I work side by side
+                with small and medium-sized businesses to find where AI can save
+                time, cut costs, and free up their teams. Then I roll up my sleeves
+                and help make it happen.
               </p>
             </div>
             <div className="mt-10 lg:mt-0 lg:col-span-5 flex justify-center lg:justify-end">
@@ -88,22 +88,22 @@ export default function AboutPage() {
               <p>
                 Most AI advice is built for two kinds of people: big enterprises
                 with seven-figure budgets, or tech founders building the next unicorn.
-                The small and medium-sized business in between. The 25-person
+                The small and medium-sized business in between, the 25-person
                 professional services firm, the 60-person manufacturer, the local
-                business owner doing 8 figures. They get left out in the cold.
+                business doing 8 figures, they get overlooked.
               </p>
               <p>
                 I started Strohm Partners because I know what it's like to run a
                 business and wish you had an extra pair of hands. I bring the
-                strategic thinking of a good consultant, the technical skills of a
-                product builder, and the pragmatism of someone who's actually had
-                P&L responsibility.
+                strategic thinking of a consultant, the technical skills of a
+                product builder, and the common sense of someone who's managed a
+                budget and had to make the numbers work.
               </p>
               <p>
                 What you get: AI that fits your business, not the other way around.
-                No lock-in. No fancy words. No 90-day engagement that ends with a slide
-                deck nobody reads. Just a real partner who sticks with you until
-                the work is actually done.
+                No lock-in. No jargon. No 90-day engagement that ends with a slide
+                deck nobody reads. A partner who sticks with you until the work
+                is done.
               </p>
             </div>
           </div>
@@ -115,8 +115,8 @@ export default function AboutPage() {
         <Container>
           <SectionHeader
             eyebrow="What I believe"
-            title="Four principles I actually live by."
-            description="These aren't motivational posters. They're the rules I use to decide what to build, what to recommend, and when to tell you AI isn't the answer right now."
+            title="Four principles I live by."
+            description="These are the rules I use to decide what to build, what to recommend, and when to tell you AI isn't the answer right now."
           />
           <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {values.map((v, i) => (
@@ -147,13 +147,13 @@ export default function AboutPage() {
           <SectionHeader
             eyebrow="Why work with me"
             title="You get me, not a revolving door of consultants."
-            description="When you hire Strohm Partners, you work directly with the founder. No account managers, no hand-offs, no surprises."
+            description="When you hire Strohm Partners, you work directly with the founder. The same person from day one."
           />
           <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3">
             {[
               {
                 title: "Direct access",
-                body: "The person you talk to on the first call is the person building your solution. No bait-and-switch with junior staff.",
+                body: "The person you talk to on the first call is the person building your solution. No hand-offs to junior staff halfway through.",
               },
               {
                 title: "Undivided focus",
@@ -191,7 +191,7 @@ export default function AboutPage() {
       <CTABand
         eyebrow="Get in touch"
         title="Let's talk about your business."
-        description="Whether you're just curious about AI or already trying things out, I'd love to hear what you're working on and where you're stuck."
+        description="Tell me what you're working on and where you're stuck. I'll give you my honest take on whether AI can help."
         primaryCta={{ label: "Book a free AI audit", href: "/book" }}
         secondaryCta={{ label: "Read about my services", href: "/services" }}
       />

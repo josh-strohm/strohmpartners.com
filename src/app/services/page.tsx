@@ -7,33 +7,33 @@ import { homeContent } from "@/content/home";
 export const metadata: Metadata = {
   title: "Services",
     description:
-      "From AI opportunity assessments to custom builds and team training. One partner, start to finish, no handoffs."
+      "From AI opportunity assessments to custom builds and team training. One partner, start to finish."
 };
 
 const faqs = [
   {
     q: "How long does an engagement typically take?",
-    a: "An assessment takes 2 to 3 weeks. A full build typically runs 6 to 16 weeks depending on what we're doing. I price by outcomes, not by the hour.",
+    a: "An assessment takes 2 to 3 weeks. A full build typically runs 6 to 16 weeks depending on scope. I price by outcomes, not by the hour.",
   },
   {
     q: "What size business do you work with?",
-    a: "1 to 250 employees is where I can help the most. Smaller than that and you probably just need a couple good off-the-shelf tools. Larger than that and you should probably hire someone in-house.",
+    a: "1 to 250 employees is the sweet spot. Smaller than that and you probably just need a couple good off-the-shelf tools. Larger than that and you should probably hire someone in-house.",
   },
   {
     q: "Do you work with our existing tools and vendors?",
-    a: "Absolutely. I don't resell software and I have no vendor kickbacks. If your current stack can handle it, I'll tell you that straight up.",
+    a: "I don't resell software and I get no kickbacks from vendors. If your current stack can handle it, I'll tell you that straight up.",
   },
   {
     q: "What does it cost?",
-    a: "The AI Opportunity Assessment starts at $1,497. It includes 2-3 weeks of deep analysis, a clear map of where AI fits, and ROI estimates based on your actual numbers. After that, build phases are scoped and priced separately — I'll give you honest ranges before you commit to anything.",
+    a: "The AI Opportunity Assessment starts at $1,497. That covers 2 to 3 weeks of deep analysis, a clear map of where AI fits, and ROI estimates based on your numbers. Build phases are scoped and priced after that. I give you clear ranges before you commit to anything.",
   },
   {
     q: "What if AI isn't the right answer for us?",
-    a: "I'll tell you. The assessment is paid either way, and if my honest recommendation is 'don't do AI yet, fix this other thing first,' that's a completely valid outcome. I'm here for the long haul, not to squeeze every billable hour.",
+    a: "I'll tell you. The assessment is paid either way, and if my recommendation is to fix something else first, that's a completely valid outcome. I'm here for the long haul, not to squeeze every billable hour.",
   },
   {
     q: "Do you offer ongoing support?",
-    a: "Yep. I do quarterly check-ins and ad-hoc support for clients who want it. But I also build everything so your team can run it without me if that's what you prefer.",
+    a: "I do quarterly check-ins and ad-hoc support for clients who want it. But I also build everything so your team can run it without me if that's what you prefer.",
   },
 ];
 
@@ -58,8 +58,8 @@ export default function ServicesPage() {
           </h1>
           <p className="mt-8 text-lg sm:text-xl text-ink-200 max-w-2xl leading-relaxed pretty">
             I start by learning your business, then I stay with you through the
-            whole process: strategy, build, training, and beyond. No handoffs to
-            junior staff, no consultants who disappear after the kickoff meeting.
+            whole process: strategy, build, training, and beyond. One person from
+            first call to finished product.
           </p>
         </Container>
       </section>
@@ -118,7 +118,7 @@ export default function ServicesPage() {
           <SectionHeader
             eyebrow="Engagement timeline"
             title="From first call to working AI in weeks, not quarters."
-            description="A straightforward, transparent process. You'll always know what's next, what it costs, and what you're getting."
+            description="A straightforward process. You'll always know what's next, what it costs, and what you're getting."
           />
           <ol className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-4 relative">
             <div
@@ -184,7 +184,7 @@ export default function ServicesPage() {
       <CTABand
         eyebrow="Start with a call"
         title="Ready to see where AI fits your business?"
-        description="A 30-minute conversation is the easiest way to figure out if we're a good fit. No pitch, no pressure. Just two people talking shop."
+        description="A 30-minute conversation is the easiest way to figure out if we're a good fit. No sales pitch, just a real talk about your business."
         primaryCta={{ label: "Book a free AI audit", href: "/book" }}
         secondaryCta={{ label: "Send a message instead", href: "/contact" }}
       />

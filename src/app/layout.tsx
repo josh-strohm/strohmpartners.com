@@ -31,11 +31,11 @@ export const metadata: Metadata = {
     template: "%s · Strohm Partners",
   },
   description:
-    "I work closely with small and medium-sized businesses to find where AI can save time, cut costs, and help teams focus on what matters. No confusing language, no cookie-cutter plans. Just honest help getting things done.",
+    "I work with small and medium-sized businesses to find where AI can save time, cut costs, and help teams do higher-value work. Straight talk and practical solutions.",
   openGraph: {
-    title: "Strohm Partners | AI that actually works for your business",
+    title: "Strohm Partners | AI that works for your business",
     description:
-      "I work closely with small and medium-sized businesses to find where AI can save time, cut costs, and help teams focus on what matters.",
+      "I work with small and medium-sized businesses to find where AI can save time, cut costs, and help teams do higher-value work.",
     type: "website",
     url: "https://strohmpartners.com",
   },

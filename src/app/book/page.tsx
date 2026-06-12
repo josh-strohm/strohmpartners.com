@@ -5,21 +5,21 @@ import { Container } from "@/components/ui/Container";
 export const metadata: Metadata = {
   title: "Book a call",
     description:
-      "Book a 30-minute discovery call with Strohm Partners. No pitch, no pressure. Just a real conversation about your business and where AI might help."
+      "Book a 30-minute discovery call with Strohm Partners. A real conversation about your business and where AI might help."
 };
 
 const expectations = [
   {
     title: "A real conversation",
-    body: "No slide deck, no sales pitch. We talk about your business, what's working, what's not, and where you wish you had more time.",
+    body: "No slide deck, no pitch. We talk about your business, what's working, what's not, and where you wish you had more time.",
   },
   {
-    title: "Honest assessment",
-    body: "I'll tell you straight up whether AI is the right move for you right now, or if you'd be better off fixing something else first.",
+    title: "Straight answers",
+    body: "I'll tell you plainly whether AI is the right move for you right now, or if you'd be better off fixing something else first.",
   },
   {
     title: "Clear next steps",
-    body: "You'll leave the call knowing exactly what working together looks like, or knowing I'm not the right fit. Either way, you win.",
+    body: "You'll leave the call knowing what working together looks like, or knowing I'm not the right fit. Either way, you walk away with clarity.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function BookPage() {
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-ink-200 max-w-2xl mx-auto leading-relaxed pretty">
             Pick a time that works for you. We'll talk about your business, where
-            you're spending too much time, and whether AI can actually help.
+            you're spending too much time, and whether AI can help.
           </p>
         </Container>
       </section>

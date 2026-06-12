@@ -6,7 +6,7 @@ import { siteContent } from "@/content/site";
 export const metadata: Metadata = {
   title: "Contact",
     description:
-      "Get in touch with Strohm Partners. I read and respond to every message personally, usually within one business day."
+      "Get in touch with Strohm Partners. I respond to every message myself, usually within one business day."
 };
 
 export default function ContactPage() {
@@ -28,9 +28,8 @@ export default function ContactPage() {
             Get in <span className="italic text-accent-300">touch.</span>
           </h1>
           <p className="mt-8 text-lg sm:text-xl text-ink-200 max-w-2xl leading-relaxed pretty">
-            I read and respond to every message personally, usually within one
-            business day. Tell me a bit about your business and what you're
-            wrestling with.
+            I respond to every message myself, usually within one business day.
+            Tell me a bit about your business and what you're dealing with.
           </p>
         </Container>
       </section>
@@ -96,8 +95,7 @@ export default function ContactPage() {
                     Book a 30-minute discovery call.
                   </h3>
                   <p className="mt-3 text-[15px] text-ink-200 leading-relaxed pretty">
-                    Skip the email ping-pong. Pick a time that works for you and
-                    we'll talk live.
+                    Pick a time that works for you and we'll talk through things live.
                   </p>
                   <a
                     href="/book"

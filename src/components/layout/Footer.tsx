@@ -37,7 +37,7 @@ export function Footer() {
             <Wordmark />
             <p className="text-ink-200 max-w-md text-[15px] leading-relaxed">
               Your AI partner for small and medium-sized businesses. I find where AI
-              saves time, cuts costs, and helps your team focus on what matters.
+              saves time, cuts costs, and frees your team up for higher-value work.
             </p>
             <div className="flex items-center gap-2 text-sm text-ink-300">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-success animate-pulse" />

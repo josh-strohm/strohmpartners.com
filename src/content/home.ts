@@ -5,11 +5,11 @@
 export const homeContent = {
   hero: {
     eyebrow: "Your AI partner is here",
-    titleStart: "AI that actually works for",
+    titleStart: "AI that works for",
     titleAccent: "your",
     titleEnd: "business.",
     description:
-      "I work shoulder-to-shoulder with small and medium-sized businesses to find the places where AI can save time, cut costs, and free up your team to do the work that actually matters. No confusing language, no cookie-cutter playbooks. Just honest advice and real help getting things done.",
+      "I help small and medium-sized businesses figure out where AI saves time, cuts costs, and frees up your team for the work that matters most. Straight talk, practical solutions, and someone who sticks around to make sure it works.",
     primaryCta: { label: "Book a free AI audit", href: "/book" },
     secondaryCta: { label: "See what I do", href: "/services" },
   },
@@ -18,39 +18,39 @@ export const homeContent = {
     {
       title: "Direct access to the founder",
       description:
-        "You work directly with me — not a junior analyst or account manager. When you call, I answer.",
+        "You work with me, not a junior analyst or account manager. When you call, I pick up.",
     },
     {
       title: "AI that fits your business",
       description:
-        "I learn how your business actually runs, then find the tools that stick. No cookie-cutter playbooks.",
+        "I learn how your business runs, then find the tools that stick. Every recommendation is based on your specific situation.",
     },
     {
       title: "No vendor kickbacks",
       description:
-        "If a tool doesn't make sense for you, I'll say so. I recommend what's right, not what pays me a commission.",
+        "If a tool doesn't make sense for you, I'll say so. I recommend what works for you, not what pays me a commission.",
     },
     {
       title: "I build it with you",
       description:
-        "I don't drop a report and vanish. I design, build, and train your team until the work is actually done.",
+        "I don't drop a report and disappear. I design, build, and train your team until the work is done.",
     },
   ],
 
   servicesEyebrow: "What I do",
   servicesTitle: "A clear path from confusion to results.",
   servicesDescription:
-    "I start by understanding your business, then I stay with you through the messy middle until AI is actually making your life easier. No handoffs, no consultants who disappear.",
+    "I start by understanding your business, then I stay with you through the whole process until AI is making your life easier. One partner, start to finish.",
   services: [
     {
       tag: "Phase 01 · From $1,497",
       title: "AI Opportunity Assessment",
       summary:
-        "We spend 2 to 3 weeks looking under the hood of your business. I find the spots where AI can save your team hours every week or help you close more deals without hiring more people.",
+        "We spend 2 to 3 weeks looking under the hood of your business. I find the spots where AI can save your team hours every week or help you close more deals without hiring.",
       bullets: [
         "Map out process-by-process where AI fits",
-        "Real ROI estimates based on your actual numbers",
-        "Honest buy vs. build recommendations",
+        "ROI estimates based on your numbers",
+        "Straight buy vs. build recommendations",
       ],
     },
     {
@@ -60,19 +60,19 @@ export const homeContent = {
         "I give you a practical, step-by-step plan that fits your budget and your appetite for change. Quick wins first, bigger bets later.",
       bullets: [
         "90-day / 6-month / 12-month game plan",
-        "Real cost and effort estimates. No surprises",
-        "How to get your team on board, not overwhelmed",
+        "Clear cost and effort estimates, no surprises",
+        "How to get your team on board without overwhelming them",
       ],
     },
     {
       tag: "Phase 03",
       title: "Build & Integrate",
       summary:
-        "I design and build the actual tools: automations, AI workflows, custom apps. Then I connect them to the software you already use.",
+        "I design and build the tools: automations, AI workflows, custom apps. Then I connect them to the software you already use.",
       bullets: [
-        "Workflow automations that actually stick",
+        "Workflow automations that stick around",
         "Custom AI tools built for your team",
-        "Plays nice with your existing stack",
+        "Works with your existing stack",
       ],
     },
     {
@@ -82,7 +82,7 @@ export const homeContent = {
         "I make sure your people know how to use what we built, and I keep tweaking things as your business changes. You're never left guessing.",
       bullets: [
         "Hands-on training for the people who need it",
-        "Simple docs and playbooks your team can reference",
+        "Simple docs and guides your team can reference",
         "Regular check-ins to keep things running smooth",
       ],
     },
@@ -95,25 +95,25 @@ export const homeContent = {
       n: "01",
       title: "Discovery call",
       description:
-        "30 minutes. Tell me about your business, what's driving you nuts, and where you wish you had more time. No pitch, no pressure. Just two humans talking shop.",
+        "30 minutes. Tell me about your business, what's eating up your time, and where you wish you had help. No sales pitch, just a real conversation.",
     },
     {
       n: "02",
       title: "Assessment",
       description:
-        "I spend 2 to 3 weeks digging into your operations and come back with a clear map of where AI can help, plus honest ROI numbers.",
+        "I spend 2 to 3 weeks digging into your operations and come back with a clear map of where AI can help, with ROI numbers you can trust.",
     },
     {
       n: "03",
       title: "Roadmap & proposal",
       description:
-        "You get a practical plan with real costs and timelines. You decide what to tackle and when. No gotchas.",
+        "You get a practical plan with clear costs and timelines. You decide what to tackle and when. Everything's on the table before you commit.",
     },
     {
       n: "04",
       title: "Build & handoff",
       description:
-        "I build it, train your team, and make sure the thing actually gets used. Then I stick around if you need me.",
+        "I build it, train your team, and make sure the thing gets used. Then I stick around if you need me.",
     },
   ],
 
@@ -121,20 +121,20 @@ export const homeContent = {
   socialProofTitle:
     "Real businesses. Real results.",
   socialProofDescription:
-    "I've built websites and digital tools for businesses across industries. Here are a few recent projects.",
+    "I've built websites and digital tools for businesses across a range of industries. Here are a couple of recent projects.",
   portfolio: [
     {
       tag: "Website",
       title: "JT3 Hauling",
       description:
-        "Designed and built a complete website with hosting setup for a hauling company. The client went from no online presence to a professional digital storefront.",
+        "Designed and built a full website with hosting for a hauling company. They went from zero online presence to a site that brings in new customers.",
       url: "https://www.jt3hauling.com",
     },
     {
       tag: "Website + hosting",
       title: "Mrs. Red Bottoms Cleaning",
       description:
-        "Built a custom website with ongoing hosting and maintenance for a cleaning company. The site represents the business professionally and is easy for the client to manage.",
+        "Built a custom website with ongoing hosting and maintenance for a cleaning company. Clean, professional, and easy for the client to manage on their own.",
       url: "https://www.mrsredbottomscleaning.com",
     },
   ],

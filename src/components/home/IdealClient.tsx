@@ -1,10 +1,10 @@
 import { Container } from "@/components/ui/Container";
 
 const criteria = [
-  "You run a business with 1–250 employees",
+  "You run a business with 1-250 employees",
   "You're spending hours every week on repetitive tasks a machine could handle",
-  "You've been burned by consultants who over-promised and under-delivered",
-  "You want a partner who actually builds things, not just talks about them",
+  "You've dealt with consultants who talked a big game but didn't deliver",
+  "You want a partner who builds things, not just talks about them",
 ];
 
 export function IdealClient() {
@@ -23,7 +23,7 @@ export function IdealClient() {
           <div className="lg:col-span-7">
             <div className="rounded-2xl bg-ink-700/70 border border-ink-400/30 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.7)] p-8 lg:p-10">
               <p className="text-ink-200 text-lg mb-6">
-                Sound like you? Check the boxes:
+                Sound like you? See if any of these ring true:
               </p>
               <ul className="flex flex-col gap-4">
                 {criteria.map((c) => (

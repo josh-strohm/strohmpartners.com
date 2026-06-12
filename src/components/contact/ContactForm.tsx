@@ -13,7 +13,7 @@ const schema = z.object({
   phone: z.string().optional(),
   company: z.string().optional(),
   website: z.string().optional(),
-  message: z.string().min(10, "Tell us a little more, at least 10 characters."),
+  message: z.string().min(10, "Tell me a bit more, at least 10 characters."),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -142,7 +142,7 @@ export function ContactForm() {
         <textarea
           id="message"
           rows={5}
-          placeholder="A few sentences about your business and what you're wrestling with…"
+          placeholder="A few sentences about your business and what you need help with…"
           {...register("message")}
           className={cn(
             "w-full rounded-xl bg-ink-900/60 border px-4 py-3 text-[15px] text-ink-50",
@@ -160,7 +160,7 @@ export function ContactForm() {
 
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
         <p className="text-xs text-ink-300">
-          By submitting, you're saying it's okay for me to reach out about your inquiry.
+          By submitting, you agree that I can reach out about your inquiry.
         </p>
         <button
           type="submit"

@@ -41,7 +41,7 @@ Create a `.env.local` file in the project root with:
 ```bash
 # Contact form webhook (N8N). When unset, the form simulates success
 # (logs payload to console) so it's still usable in dev.
-NEXT_PUBLIC_N8N_WEBHOOK_URL="https://n8n.strohmpartners.com/webhook/96daf806-3a1c-4dc3-a43a-c655bef78f13"
+NEXT_PUBLIC_N8N_WEBHOOK_URL="https://n8n.strohmpartners.com/webhook/cb51efc1-6854-4d40-9ed9-c591d650dcbd"
 ```
 
 When the env var contains the placeholder `YOUR_N8N_WEBHOOK_URL` (or is missing), the form short-circuits and shows the success state without actually posting.

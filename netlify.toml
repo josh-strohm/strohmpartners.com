@@ -2,3 +2,8 @@
   from = "/missed-call-text-back"
   to = "https://trades.strohmpartners.com"
   status = 301
+
+[[redirects]]
+  from = "/admin-services"
+  to = "https://admin.strohmpartners.com"
+  status = 301

@@ -12,6 +12,12 @@
   force = true
 
 [[redirects]]
+  from = "/api/n8n-submit"
+  to = "/.netlify/functions/n8n-submit"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/missed-call-text-back"
   to = "https://trades.strohmpartners.com"
   status = 301

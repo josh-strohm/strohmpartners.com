@@ -47,7 +47,7 @@ function buildCrmRequestBody(data: ContactFormPayload, meta: SubmissionMeta) {
   };
 }
 
-function shouldUseCrmProxy() {
+function shouldUseServerProxy() {
   return window.location.protocol === "https:";
 }
 
@@ -55,7 +55,7 @@ async function submitToCrm(data: ContactFormPayload, meta: SubmissionMeta) {
   if (!getCrmSubmitUrl()) return;
 
   const body = JSON.stringify(buildCrmRequestBody(data, meta));
-  const url = shouldUseCrmProxy() ? "/api/crm-submit" : getCrmSubmitUrl();
+  const url = shouldUseServerProxy() ? "/api/crm-submit" : getCrmSubmitUrl();
 
   if (!url) return;
 
@@ -66,27 +66,32 @@ async function submitToCrm(data: ContactFormPayload, meta: SubmissionMeta) {
   });
 
   if (!res.ok) {
-    const label = shouldUseCrmProxy() ? "CRM proxy" : "CRM API";
+    const label = shouldUseServerProxy() ? "CRM proxy" : "CRM API";
     throw new Error(`${label} returned ${res.status}`);
   }
 }
 
 async function submitToN8n(data: ContactFormPayload) {
-  const url = getN8nWebhookUrl();
+  if (!getN8nWebhookUrl()) return;
+
+  const body = JSON.stringify({
+    ...data,
+    source: "strohmpartners.com contact form",
+    submittedAt: new Date().toISOString(),
+  });
+
+  const url = shouldUseServerProxy() ? "/api/n8n-submit" : getN8nWebhookUrl();
   if (!url) return;
 
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      ...data,
-      source: "strohmpartners.com contact form",
-      submittedAt: new Date().toISOString(),
-    }),
+    body,
   });
 
   if (!res.ok) {
-    throw new Error(`N8N webhook returned ${res.status}`);
+    const label = shouldUseServerProxy() ? "N8N proxy" : "N8N webhook";
+    throw new Error(`${label} returned ${res.status}`);
   }
 }
 
@@ -107,7 +112,8 @@ export async function submitContactForm(data: ContactFormPayload) {
   };
 
   const hasCrm = getCrmSubmitUrl() !== null;
-  const hasN8n = getN8nWebhookUrl() !== null;
+  const hasN8n =
+    shouldUseServerProxy() || getN8nWebhookUrl() !== null;
 
   if (!hasCrm && !hasN8n) {
     console.warn(

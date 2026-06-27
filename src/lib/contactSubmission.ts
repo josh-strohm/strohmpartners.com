@@ -72,7 +72,10 @@ async function submitToCrm(data: ContactFormPayload, meta: SubmissionMeta) {
 }
 
 async function submitToN8n(data: ContactFormPayload) {
-  if (!getN8nWebhookUrl()) return;
+  const useProxy = shouldUseServerProxy();
+  const directUrl = getN8nWebhookUrl();
+
+  if (!useProxy && !directUrl) return;
 
   const body = JSON.stringify({
     ...data,
@@ -80,7 +83,7 @@ async function submitToN8n(data: ContactFormPayload) {
     submittedAt: new Date().toISOString(),
   });
 
-  const url = shouldUseServerProxy() ? "/api/n8n-submit" : getN8nWebhookUrl();
+  const url = useProxy ? "/api/n8n-submit" : directUrl;
   if (!url) return;
 
   const res = await fetch(url, {
@@ -90,7 +93,7 @@ async function submitToN8n(data: ContactFormPayload) {
   });
 
   if (!res.ok) {
-    const label = shouldUseServerProxy() ? "N8N proxy" : "N8N webhook";
+    const label = useProxy ? "N8N proxy" : "N8N webhook";
     throw new Error(`${label} returned ${res.status}`);
   }
 }

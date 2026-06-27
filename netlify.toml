@@ -1,3 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/crm-submit"
+  to = "/.netlify/functions/crm-submit"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/missed-call-text-back"
   to = "https://trades.strohmpartners.com"

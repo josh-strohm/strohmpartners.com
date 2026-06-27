@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { submitContactForm } from "@/lib/contactSubmission";
 import { cn } from "@/lib/utils";
 
 const schema = z.object({
@@ -19,9 +20,9 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 /**
- * Contact form. Submits to an N8N webhook URL set via NEXT_PUBLIC_N8N_WEBHOOK_URL.
- * Falls back to a no-op (logs + shows a friendly message) if the env var is not set
- * so the form is always usable in dev.
+ * Contact form. Submits in parallel to the CRM public forms API and an N8N webhook.
+ * Falls back to a no-op (logs + shows a friendly message) when neither destination
+ * is configured so the form is still usable in dev.
  */
 export function ContactForm() {
   const {
@@ -35,32 +36,9 @@ export function ContactForm() {
 
   const onSubmit = async (data: FormData) => {
     setStatus("idle");
-    const webhookUrl = process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL;
-
-    // If no webhook configured yet, simulate success so the form is still usable.
-    if (!webhookUrl || webhookUrl.includes("YOUR_N8N_WEBHOOK_URL")) {
-      console.warn(
-        "[ContactForm] NEXT_PUBLIC_N8N_WEBHOOK_URL not set, submission logged to console only.",
-        data
-      );
-      // Brief delay for UX
-      await new Promise((r) => setTimeout(r, 600));
-      setStatus("success");
-      reset();
-      return;
-    }
 
     try {
-      const res = await fetch(webhookUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...data,
-          source: "strohmpartners.com contact form",
-          submittedAt: new Date().toISOString(),
-        }),
-      });
-      if (!res.ok) throw new Error(`Webhook returned ${res.status}`);
+      await submitContactForm(data);
       setStatus("success");
       reset();
     } catch (err) {

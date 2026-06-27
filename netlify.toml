@@ -6,14 +6,8 @@
   directory = "netlify/functions"
 
 [[redirects]]
-  from = "/api/crm-submit"
-  to = "/.netlify/functions/crm-submit"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/api/n8n-submit"
-  to = "/.netlify/functions/n8n-submit"
+  from = "/api/contact-submit"
+  to = "/.netlify/functions/contact-submit"
   status = 200
   force = true
 

@@ -51,50 +51,67 @@ function shouldUseServerProxy() {
   return window.location.protocol === "https:";
 }
 
+async function submitViaServerProxy(
+  data: ContactFormPayload,
+  meta: SubmissionMeta
+) {
+  const res = await fetch("/api/contact-submit", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      ...data,
+      pageUrl: meta.pageUrl,
+      referrer: meta.referrer,
+    }),
+  });
+
+  if (!res.ok) {
+    let detail = `Contact submit proxy returned ${res.status}`;
+    try {
+      const payload = (await res.json()) as { errors?: string[]; error?: string };
+      if (payload.errors?.length) {
+        detail = payload.errors.join("; ");
+      } else if (payload.error) {
+        detail = payload.error;
+      }
+    } catch {
+      // Keep default detail when the proxy response is not JSON.
+    }
+    throw new Error(detail);
+  }
+}
+
 async function submitToCrm(data: ContactFormPayload, meta: SubmissionMeta) {
-  if (!getCrmSubmitUrl()) return;
-
-  const body = JSON.stringify(buildCrmRequestBody(data, meta));
-  const url = shouldUseServerProxy() ? "/api/crm-submit" : getCrmSubmitUrl();
-
+  const url = getCrmSubmitUrl();
   if (!url) return;
 
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body,
+    body: JSON.stringify(buildCrmRequestBody(data, meta)),
   });
 
   if (!res.ok) {
-    const label = shouldUseServerProxy() ? "CRM proxy" : "CRM API";
-    throw new Error(`${label} returned ${res.status}`);
+    throw new Error(`CRM API returned ${res.status}`);
   }
 }
 
 async function submitToN8n(data: ContactFormPayload) {
-  const useProxy = shouldUseServerProxy();
-  const directUrl = getN8nWebhookUrl();
-
-  if (!useProxy && !directUrl) return;
-
-  const body = JSON.stringify({
-    ...data,
-    source: "strohmpartners.com contact form",
-    submittedAt: new Date().toISOString(),
-  });
-
-  const url = useProxy ? "/api/n8n-submit" : directUrl;
+  const url = getN8nWebhookUrl();
   if (!url) return;
 
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body,
+    body: JSON.stringify({
+      ...data,
+      source: "strohmpartners.com contact form",
+      submittedAt: new Date().toISOString(),
+    }),
   });
 
   if (!res.ok) {
-    const label = useProxy ? "N8N proxy" : "N8N webhook";
-    throw new Error(`${label} returned ${res.status}`);
+    throw new Error(`N8N webhook returned ${res.status}`);
   }
 }
 
@@ -114,9 +131,13 @@ export async function submitContactForm(data: ContactFormPayload) {
     referrer: document.referrer || null,
   };
 
+  if (shouldUseServerProxy()) {
+    await submitViaServerProxy(data, meta);
+    return { devMode: false as const };
+  }
+
   const hasCrm = getCrmSubmitUrl() !== null;
-  const hasN8n =
-    shouldUseServerProxy() || getN8nWebhookUrl() !== null;
+  const hasN8n = getN8nWebhookUrl() !== null;
 
   if (!hasCrm && !hasN8n) {
     console.warn(

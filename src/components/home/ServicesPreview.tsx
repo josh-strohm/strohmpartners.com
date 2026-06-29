@@ -4,7 +4,7 @@ import { homeContent } from "@/content/home";
 
 export function ServicesPreview() {
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 lg:py-20">
       <Container>
         <div className="flex flex-col gap-16">
           <SectionHeader

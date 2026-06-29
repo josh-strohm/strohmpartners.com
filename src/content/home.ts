@@ -146,4 +146,14 @@ export const homeContent = {
     "Real estate",
     "Healthcare practices",
   ],
+
+  outcomes: [
+    "Leads answered in minutes",
+    "Zero leads lost",
+    "Instant owner alerts",
+    "20–30 hours saved monthly",
+    "Consistent replies 24/7",
+    "Faster team handoffs",
+    "Focus on higher-value work",
+  ],
 };

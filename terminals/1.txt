@@ -1,0 +1,16 @@
+---
+pid: 2032
+cwd: "C:\Users\josh.strohm\code\strohmpartners.com"
+command: "git add netlify/functions/contact-submit.ts netlify.toml src/lib/contactSubmission.ts && git add -u netlify/functions/ && git commit -m \"Send contact form submissions through one Netlify function.\" -m \"Post once to /api/contact-submit on production so CRM and N8N are always triggered together server-side, avoiding client-side dual-fetch issues and ad-blocker interference with n8n URLs.\" && git push origin main"
+started_at: 2026-06-27T02:12:12.274Z
+running_for_ms: 55385000 
+---
+warning: in the working copy of 'netlify.toml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/lib/contactSubmission.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'netlify/functions/contact-submit.ts', LF will be replaced by CRLF the next time Git touches it
+[main cd223dd] Send contact form submissions through one Netlify function.Everything up-to-date
+
+ 5 files changed, 226 insertions(+), 147 deletions(-)
+ create mode 100644 netlify/functions/contact-submit.ts
+ delete mode 100644 netlify/functions/crm-submit.ts
+ delete mode 100644 netlify/functions/n8n-submit.ts

@@ -1,5 +1,6 @@
 import { Hero } from "@/components/home/Hero";
 import { ValueStrips } from "@/components/home/ValueStrips";
+import { OutcomesScroller } from "@/components/home/OutcomesScroller";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
 import { HowWeWork } from "@/components/home/HowWeWork";
 import { IdealClient } from "@/components/home/IdealClient";
@@ -11,6 +12,7 @@ export default function HomePage() {
     <>
       <Hero />
       <ValueStrips />
+      <OutcomesScroller />
       <ServicesPreview />
       <HowWeWork />
       <IdealClient />

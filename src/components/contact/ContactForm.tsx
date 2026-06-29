@@ -147,7 +147,8 @@ export function ContactForm() {
             "inline-flex items-center justify-center gap-2 rounded-full bg-ink-50 text-ink-950",
             "h-12 px-6 text-[15px] font-medium transition-all",
             "hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed",
-            "shadow-[0_0_30px_-8px_rgba(56,189,248,0.5)] hover:shadow-[0_0_40px_-6px_rgba(56,189,248,0.7)]"
+            "shadow-[0_0_25px_-8px_rgba(56,189,248,0.35)] " +
+            "hover:shadow-[0_0_0_1px_rgba(56,189,248,0.5),0_0_35px_8px_rgba(56,189,248,0.45)]"
           )}
         >
           {isSubmitting ? "Sending…" : "Send message"}

@@ -93,6 +93,20 @@ html, body {
   border-radius: 4px;
 }
 
+/* Hide default <details> disclosure marker / triangle */
+details summary {
+  list-style: none;
+}
+details summary::-webkit-details-marker,
+details summary::marker {
+  display: none;
+}
+
+/* Remove default browser focus outline / blue ring from the summary (and thus the plus) */
+details summary:focus-visible {
+  outline: none;
+}
+
 /* ============================================================
    Utility classes
    ============================================================ */
@@ -146,4 +160,17 @@ html, body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* ============================================================
+   Horizontal scrollers (clean, no visible scrollbar)
+   ============================================================ */
+
+.outcomes-scroller {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.outcomes-scroller::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

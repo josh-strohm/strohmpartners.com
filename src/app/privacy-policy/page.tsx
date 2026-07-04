@@ -55,7 +55,7 @@ const sections = [
         <p>We use the collected information for various professional purposes:</p>
         <ul className="list-disc pl-5 flex flex-col gap-2 marker:text-accent-500">
           <li>To respond to your inquiries, schedule strategic consultation calls, and scope operational audits.</li>
-          <li>To deliver, monitor, and optimize our custom AI consulting, prompts tuning, and systems integration services.</li>
+          <li>To deliver, monitor, and improve our custom AI consulting and integration work.</li>
           <li>To manage your client account, process payments, and issue invoices.</li>
           <li>To ensure the security, integrity, and operational health of our digital systems.</li>
           <li>To comply with regulatory and legal obligations (such as financial reporting and Know Your Customer rules).</li>

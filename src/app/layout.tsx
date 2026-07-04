@@ -27,15 +27,15 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL("https://strohmpartners.com"),
   title: {
-    default: "Strohm Partners | Your AI partner",
+    default: "Strohm Partners | Practical AI for your business",
     template: "%s · Strohm Partners",
   },
   description:
-    "I work with small and medium-sized businesses to find where AI can save time, cut costs, and help teams do higher-value work. Straight talk and practical solutions.",
+    "I work with small and medium businesses to find where AI can actually save time and money. Straight talk, real builds, and I stick around until it works.",
   openGraph: {
     title: "Strohm Partners | AI that works for your business",
     description:
-      "I work with small and medium-sized businesses to find where AI can save time, cut costs, and help teams do higher-value work.",
+      "I work with small and medium businesses to find where AI can actually save time and money. Straight talk and practical solutions.",
     type: "website",
     url: "https://strohmpartners.com",
   },

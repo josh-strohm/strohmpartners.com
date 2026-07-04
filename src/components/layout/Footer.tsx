@@ -36,8 +36,8 @@ export function Footer() {
           <div className="md:col-span-4 flex flex-col gap-5">
             <Wordmark />
             <p className="text-ink-200 max-w-md text-[15px] leading-relaxed">
-              Your AI partner for small and medium-sized businesses. I find where AI
-              saves time, cuts costs, and frees your team up for higher-value work.
+              Practical AI help for small and medium businesses. I find where it
+              actually saves time and money, build it with you, and stick around.
             </p>
             <div className="flex items-center gap-2 text-sm text-ink-300">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-success animate-pulse" />

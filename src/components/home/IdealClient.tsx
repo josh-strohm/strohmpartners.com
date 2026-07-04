@@ -2,9 +2,9 @@ import { Container } from "@/components/ui/Container";
 
 const criteria = [
   "You run a business with 1-250 employees",
-  "You're spending hours every week on repetitive tasks a machine could handle",
-  "You've dealt with consultants who talked a big game but didn't deliver",
-  "You want a partner who builds things, not just talks about them",
+  "You're spending way too many hours on repetitive work that feels automatable",
+  "You've worked with consultants who sounded smart but didn't ship anything useful",
+  "You want someone who will actually build the thing, not just recommend it",
 ];
 
 export function IdealClient() {
@@ -17,13 +17,13 @@ export function IdealClient() {
               Is this for you?
             </span>
             <h2 className="mt-4 font-display text-4xl text-ink-50 leading-tight">
-              I work best with businesses that are ready to stop wasting time.
+              I work best with businesses ready to stop wasting time on stuff a computer can handle.
             </h2>
           </div>
           <div className="lg:col-span-7">
             <div className="rounded-2xl bg-ink-700/70 border border-ink-400/30 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.7)] p-8 lg:p-10">
               <p className="text-ink-200 text-lg mb-6">
-                Sound like you? See if any of these ring true:
+                If any of this sounds familiar:
               </p>
               <ul className="flex flex-col gap-4">
                 {criteria.map((c) => (

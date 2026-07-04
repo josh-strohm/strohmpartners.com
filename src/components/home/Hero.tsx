@@ -80,9 +80,9 @@ export function Hero() {
           className="mt-20 grid grid-cols-2 gap-px overflow-hidden rounded-2xl bg-ink-600/50 border border-ink-400/30 md:grid-cols-4"
         >
           {[
-            { k: "1", v: "Dedicated AI partner" },
+            { k: "1", v: "Person doing the work" },
             { k: "100%", v: "Personal attention" },
-            { k: "From $1,497", v: "AI assessment pricing" },
+            { k: "From $1,497", v: "Assessment pricing" },
             { k: "1 to 250", v: "Employee range I serve" },
           ].map((s) => (
             <div

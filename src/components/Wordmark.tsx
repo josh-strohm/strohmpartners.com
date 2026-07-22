@@ -6,7 +6,7 @@ export function Wordmark({ className, asLink = true, logoClassName }: { classNam
   const content = (
     <span className={cn("inline-flex items-center gap-2.5", className)}>
       <Image
-        src="/strohmpartners-logo-nobg.png"
+        src="/strohm-partners-logo.png"
         alt="Strohm Partners"
         width={120}
         height={30}

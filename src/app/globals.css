@@ -175,42 +175,4 @@ details summary:focus-visible {
   display: none; /* Chrome, Safari, Opera */
 }
 
-/* ============================================================
-   n8n Chat Widget — Brand theme overrides
-   ============================================================ */
 
-:root {
-  --chat--color--primary: #38BDF8;
-  --chat--color--primary-shade-50: #0EA5E9;
-  --chat--color--primary--shade-100: #0284C7;
-  --chat--color--secondary: #38BDF8;
-  --chat--color-secondary-shade-50: #0EA5E9;
-  --chat--color-white: #F0EFE8;
-  --chat--color-light: #070A12;
-  --chat--color-light-shade-50: #0C101C;
-  --chat--color-light-shade-100: #131826;
-  --chat--color-medium: #1C2235;
-  --chat--color-dark: #F0EFE8;
-  --chat--color-disabled: #2E3550;
-  --chat--color-typing: #9298B0;
-  --chat--header--background: #0C101C;
-  --chat--header--color: #F0EFE8;
-  --chat--header--border-bottom: 1px solid #1C2235;
-  --chat--toggle--background: #38BDF8;
-  --chat--toggle--hover--background: #0EA5E9;
-  --chat--toggle--active--background: #0284C7;
-  --chat--toggle--color: #010205;
-  --chat--message--bot--background: #070A12;
-  --chat--message--bot--color: #F0EFE8;
-  --chat--message--bot--border: 1px solid #1C2235;
-  --chat--message--user--background: #38BDF8;
-  --chat--message--user--color: #010205;
-  --chat--body--background: #030509;
-  --chat--input--background: #0C101C;
-  --chat--input--text-color: #F0EFE8;
-  --chat--input--border: 1px solid #1C2235;
-  --chat--input--border-active: 1px solid #38BDF8;
-  --chat--textarea--height: 50px;
-  --chat--footer--background: #030509;
-  --chat--close--button--color-hover: #38BDF8;
-}

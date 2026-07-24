@@ -6,6 +6,9 @@ const WEBHOOK_URL =
   'https://n8n.strohmpartners.com/webhook/fc2b023a-7199-4c36-856e-366d5d355392/chat'
 const TITLE = 'Chat with us'
 const SUBTITLE = 'Strohm Partners · usually replies in a minute'
+const BRAND = '#437F9C'
+const BRAND_DARK = '#2f5d74'
+const BRAND_LIGHT = '#a4c4d4'
 
 function extractReply(rawText: string): string {
   try {
@@ -40,6 +43,8 @@ export default function N8nChat() {
   const [messages, setMessages] = useState<{ text: string; who: 'user' | 'bot' }[]>([])
   const [busy, setBusy] = useState(false)
   const [input, setInput] = useState('')
+  const [hoverBtn, setHoverBtn] = useState(false)
+  const [hoverSend, setHoverSend] = useState(false)
   const sidRef = useRef('')
   const msgsRef = useRef<HTMLDivElement>(null)
 
@@ -113,9 +118,9 @@ export default function N8nChat() {
           }}
         >
           {/* Header */}
-          <div style={{ background: '#2563eb', color: '#fff', padding: '14px 16px' }}>
+          <div style={{ background: BRAND, color: '#fff', padding: '14px 16px' }}>
             <div style={{ fontWeight: 600, fontSize: 15 }}>{TITLE}</div>
-            <div style={{ fontSize: 12, opacity: 0.85, marginTop: 2 }}>{SUBTITLE}</div>
+            <div style={{ fontSize: 12, opacity: 0.9, marginTop: 2 }}>{SUBTITLE}</div>
           </div>
 
           {/* Messages */}
@@ -141,7 +146,7 @@ export default function N8nChat() {
                   whiteSpace: 'pre-wrap',
                   wordWrap: 'break-word',
                   marginLeft: m.who === 'user' ? 'auto' : undefined,
-                  background: m.who === 'user' ? '#2563eb' : '#fff',
+                  background: m.who === 'user' ? BRAND : '#fff',
                   color: m.who === 'user' ? '#fff' : '#111',
                   border: m.who === 'user' ? undefined : '1px solid #e5e7eb',
                 }}
@@ -173,19 +178,25 @@ export default function N8nChat() {
                 fontSize: 14,
                 outline: 'none',
                 fontFamily: 'inherit',
+                color: '#111',
+                background: '#fff',
+                caretColor: BRAND,
               }}
             />
             <button
               type="submit"
               disabled={busy}
+              onMouseEnter={() => setHoverSend(true)}
+              onMouseLeave={() => setHoverSend(false)}
               style={{
-                background: busy ? '#93c5fd' : '#2563eb',
+                background: busy ? BRAND_LIGHT : hoverSend ? BRAND_DARK : BRAND,
                 color: '#fff',
                 border: 'none',
                 padding: '0 18px',
                 cursor: busy ? 'not-allowed' : 'pointer',
                 fontWeight: 600,
                 fontSize: 14,
+                transition: 'background .15s ease',
               }}
             >
               {busy ? '...' : 'Send'}
@@ -197,17 +208,20 @@ export default function N8nChat() {
       {/* Toggle button */}
       <button
         onClick={() => setOpen((v) => !v)}
+        onMouseEnter={() => setHoverBtn(true)}
+        onMouseLeave={() => setHoverBtn(false)}
         aria-label="Open chat"
         style={{
           width: 56,
           height: 56,
           borderRadius: '50%',
-          background: '#2563eb',
+          background: hoverBtn ? BRAND_DARK : BRAND,
           color: '#fff',
           border: 'none',
           cursor: 'pointer',
           boxShadow: '0 8px 24px rgba(0,0,0,.18)',
           fontSize: 24,
+          transition: 'background .15s ease',
         }}
       >
         💬

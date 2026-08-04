@@ -7,33 +7,33 @@ import { homeContent } from "@/content/home";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "AI assessments, practical roadmaps, custom builds, and team training. One person from first call to working solution."
+    "Start with a $999 AI Tools Assessment, then get help with process redesign, automation, knowledge systems, custom workflows, or ongoing support."
 };
 
 const faqs = [
   {
-    q: "How long does an engagement typically take?",
-    a: "An assessment takes two or three weeks. A full build usually lands between 6 and 16 weeks depending on what we're doing. I price by the outcome, not the hour.",
+    q: "What happens in the AI Tools Assessment?",
+    a: "We meet on Google Meet for 45 minutes and walk through the way your business runs. I review the conversation, compare the tools that fit, and send a report with 3–7 recommendations, a starting plan, savings estimates, and a 30-minute review call.",
   },
   {
-    q: "What size business do you work with?",
-    a: "1 to 250 employees is the sweet spot. Smaller than that and you can probably get by with off-the-shelf tools. Much bigger and you might be better off hiring in-house.",
+    q: "What size business is this for?",
+    a: "The sweet spot is 2–20 employees with $500K–$5M in annual revenue. If you are smaller or larger than that, reach out and we can see if the assessment fits.",
   },
   {
     q: "Do you work with our existing tools and vendors?",
-    a: "I don't resell software and I don't get paid by vendors. If what you already have can do the job, I'll say so.",
+    a: "Yes. I start with what you already use and look for the smallest change that solves the problem. I do not resell software or take vendor kickbacks.",
   },
   {
     q: "What does it cost?",
-    a: "The AI Opportunity Assessment starts at $1,497. That gets you two or three weeks of digging, a map of where AI fits, and honest ROI numbers. Bigger phases get scoped and priced after that. You always see the range before we start.",
+    a: "The AI Tools Assessment is $999, paid once. The tools I recommend typically cost about $60 per month combined. Any implementation work is optional, and I give you the price before we start.",
   },
   {
-    q: "What if AI isn't the right answer for us?",
-    a: "I'll tell you. The assessment is paid either way. If the right move is to fix something else first, that's a good outcome. I'm not here to sell you AI you don't need.",
+    q: "What if you can't find at least 5 hours of savings?",
+    a: "You get the full assessment fee back. The report must identify at least five hours a week in possible savings, or your only cost is the 45 minutes we spend together.",
   },
   {
-    q: "Do you offer ongoing support?",
-    a: "Yes, quarterly check-ins and help when you need it. I also build things so your team can keep it running without me if that's what you want.",
+    q: "What happens after the assessment?",
+    a: "Most clients can put the report to work themselves. If you want help, I can redesign the process, build a small automation, organize your knowledge, create a custom workflow, or stay on as your AI Concierge. None of that is required.",
   },
 ];
 
@@ -53,13 +53,13 @@ export default function ServicesPage() {
             Services
           </span>
           <h1 className="mt-8 font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.0] text-ink-50 max-w-4xl balance">
-            Your AI partner,{" "}
-            <span className="italic text-accent-300">every step.</span>
+            AI tools chosen for{" "}
+            <span className="italic text-accent-300">the way you work.</span>
           </h1>
           <p className="mt-8 text-lg sm:text-xl text-ink-200 max-w-2xl leading-relaxed pretty">
-            I learn how your business runs, then stay with you through strategy,
-            building, training, and the messy parts after launch. One person the
-            whole time.
+            The assessment finds where your week is going and gives you a short
+            list of tools worth trying. When you want help putting them in place,
+            I can stay involved through implementation.
           </p>
         </Container>
       </section>
@@ -71,7 +71,9 @@ export default function ServicesPage() {
             {homeContent.services.map((s) => (
               <div
                 key={s.title}
-                className="group relative overflow-hidden rounded-2xl bg-ink-700/70 p-8 lg:p-10 border border-ink-400/30 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.7)] transition-all hover:bg-ink-700 hover:border-ink-400/50"
+                className={`group relative overflow-hidden rounded-2xl bg-ink-700/70 p-8 lg:p-10 border border-ink-400/30 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.7)] transition-all hover:bg-ink-700 hover:border-ink-400/50 ${
+                  s.title === "AI Concierge" ? "md:col-span-2" : ""
+                }`}
               >
                 <div className="flex items-baseline justify-between gap-4">
                   <span className="font-mono text-xs uppercase tracking-[0.2em] text-accent-300">
@@ -103,7 +105,7 @@ export default function ServicesPage() {
                     href={s.tag.includes("Phase 01") ? "/book" : "/contact"}
                     className="inline-flex items-center gap-2 rounded-full bg-accent-500/10 border border-accent-500/30 px-5 py-2.5 text-sm text-accent-300 hover:bg-accent-500/20 hover:text-accent-200 transition-colors"
                   >
-                    {s.tag.includes("Phase 01") ? "Book a free AI audit" : "Get in touch"} →
+                    {s.tag.includes("Phase 01") ? "Book your assessment" : "Discuss this next step"} →
                   </a>
                 </div>
               </div>
@@ -116,9 +118,9 @@ export default function ServicesPage() {
       <section className="py-20 lg:py-28 border-t border-ink-700/40">
         <Container>
           <SectionHeader
-            eyebrow="Engagement timeline"
-            title="From first call to something working in weeks, not quarters."
-            description="A clear process. You always know what's next, what it costs, and what you're getting."
+            eyebrow="What happens next"
+            title="A simple path from the assessment to the work."
+            description="You get the report, choose what to try, and decide whether you want help with the build."
           />
           <ol className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-4 relative">
             <div
@@ -182,10 +184,10 @@ export default function ServicesPage() {
       </section>
 
       <CTABand
-        eyebrow="Start with a call"
-        title="Ready to see where AI fits?"
-        description="Thirty minutes to talk about your business and figure out if this makes sense. No pitch, just a real conversation."
-        primaryCta={{ label: "Book a free AI audit", href: "/book" }}
+        eyebrow="Start with the assessment"
+        title="Ready to reclaim some time?"
+        description="Start with 45 minutes. You will leave with specific tools to try, a starting plan, and the numbers behind the recommendation."
+        primaryCta={{ label: "Book your $999 assessment", href: "/book" }}
         secondaryCta={{ label: "Send a message instead", href: "/contact" }}
       />
     </>

@@ -11,7 +11,7 @@ export function Wordmark({ className, asLink = true, logoClassName }: { classNam
         width={120}
         height={30}
         priority
-        className={cn("w-auto", logoClassName || "h-24")}
+        className={cn("w-auto", logoClassName || "h-40")}
       />
     </span>
   );

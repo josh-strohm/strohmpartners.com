@@ -14,7 +14,7 @@ const linkGroups = [
   {
     title: "Engage",
     links: [
-      { label: "Book a call", href: "/book" },
+      { label: "Book assessment", href: "/book" },
       { label: "Services overview", href: "/services" },
     ],
   },
@@ -30,14 +30,14 @@ const linkGroups = [
 
 export function Footer() {
   return (
-    <footer className="relative mt-32 border-t border-ink-700/50 bg-ink-950">
-      <Container className="py-16 lg:py-20">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
-          <div className="md:col-span-4 flex flex-col gap-5">
+    <footer className="relative mt-20 lg:mt-24 border-t border-ink-700/50 bg-ink-950">
+      <Container className="py-8 lg:py-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
+          <div className="md:col-span-4 flex flex-col gap-3">
             <Wordmark />
             <p className="text-ink-200 max-w-md text-[15px] leading-relaxed">
-              Practical AI help for small and medium businesses. I find where it
-              actually saves time and money, build it with you, and stick around.
+              AI help for small and medium businesses. I find the work slowing
+              you down, recommend what fits, and help you put it in place.
             </p>
             <div className="flex items-center gap-2 text-sm text-ink-300">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-success animate-pulse" />
@@ -48,11 +48,11 @@ export function Footer() {
           </div>
 
           {linkGroups.map((group) => (
-            <div key={group.title} className="md:col-span-2 flex flex-col gap-4 md:col-start-auto">
+            <div key={group.title} className="md:col-span-2 flex flex-col gap-3 md:col-start-auto">
               <h4 className="font-mono text-xs uppercase tracking-[0.18em] text-ink-300">
                 {group.title}
               </h4>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-2">
                 {group.links.map((l) => (
                   <li key={l.href}>
                     <Link
@@ -68,7 +68,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-16 flex flex-col gap-3 border-t border-ink-700/50 pt-8 md:flex-row md:items-center md:justify-between">
+        <div className="mt-10 flex flex-col gap-3 border-t border-ink-700/50 pt-5 md:flex-row md:items-center md:justify-between">
           <p className="text-xs text-ink-300 font-mono uppercase tracking-wider">
             © {new Date().getFullYear()} Strohm Partners LLC. All rights reserved.
           </p>

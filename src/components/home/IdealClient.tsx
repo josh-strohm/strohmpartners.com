@@ -1,10 +1,10 @@
 import { Container } from "@/components/ui/Container";
 
 const criteria = [
-  "You run a business with 1-250 employees",
-  "You're spending way too many hours on repetitive work that feels automatable",
-  "You've worked with consultants who sounded smart but didn't ship anything useful",
-  "You want someone who will actually build the thing, not just recommend it",
+  "You run a business with roughly 2–20 employees and $500K–$5M in revenue",
+  "You spend too many hours on work that should be easier",
+  "You have heard enough about AI tools and want to know which ones are worth your time",
+  "You want recommendations first, with implementation help when you need it",
 ];
 
 export function IdealClient() {
@@ -17,7 +17,7 @@ export function IdealClient() {
               Is this for you?
             </span>
             <h2 className="mt-4 font-display text-4xl text-ink-50 leading-tight">
-              I work best with businesses ready to stop wasting time on stuff a computer can handle.
+              I work best with businesses ready to stop doing work a computer can handle.
             </h2>
           </div>
           <div className="lg:col-span-7">
@@ -36,12 +36,12 @@ export function IdealClient() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-8">
+            <div className="mt-8">
                 <a
                   href="/book"
                   className="inline-flex items-center gap-2 rounded-full bg-accent-500/10 border border-accent-500/30 px-6 py-3 text-sm text-accent-300 hover:bg-accent-500/20 hover:text-accent-200 transition-colors"
                 >
-                  Book a free AI audit →
+                  Book your AI assessment →
                 </a>
               </div>
             </div>

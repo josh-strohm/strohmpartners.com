@@ -28,8 +28,8 @@ export default function ContactPage() {
             Get in <span className="italic text-accent-300">touch.</span>
           </h1>
           <p className="mt-8 text-lg sm:text-xl text-ink-200 max-w-2xl leading-relaxed pretty">
-            I read every message and reply myself, usually within a business day.
-            Tell me about your business and what's on your mind.
+            I read every message and reply myself, usually within one business
+            day. Tell me what is taking too much time or what you want to fix.
           </p>
         </Container>
       </section>
@@ -92,16 +92,16 @@ export default function ContactPage() {
                     Prefer to talk live?
                   </span>
                   <h3 className="font-display text-2xl text-ink-50 leading-tight">
-                    Book a 30-minute discovery call.
+                    Start with a 45-minute AI assessment.
                   </h3>
                   <p className="mt-3 text-[15px] text-ink-200 leading-relaxed pretty">
-                    Pick a time that works for you and we'll talk through things live.
+                    Pick a time and we’ll map where your week is going, then choose the tools worth trying first.
                   </p>
                   <a
                     href="/book"
                     className="mt-6 inline-flex items-center gap-2 text-sm text-ink-50 hover:text-accent-300 transition-colors"
                   >
-                    Book a call
+                    Book your assessment
                     <span aria-hidden>→</span>
                   </a>
                 </div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                   Need support?
                 </h3>
                 <p className="mt-3 text-[15px] text-ink-200 leading-relaxed pretty">
-                  Current clients can reach out directly. I'm here to help.
+                  Current clients can reach out directly. I’m here to help.
                 </p>
                 <dl className="mt-6 flex flex-col gap-5 text-[15px]">
                   <div>

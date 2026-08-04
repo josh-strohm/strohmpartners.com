@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Container } from "@/components/ui/Container";
+import { Wordmark } from "@/components/Wordmark";
 
 export const metadata: Metadata = {
-  title: "Book a call",
+  title: "Book your AI Tools Assessment",
   description:
-    "Book a 30-minute discovery call. A real conversation about your business and whether AI can actually help."
+    "Book your $999 AI Tools Assessment: a 45-minute interview, 3–7 tool prescriptions, a quick-start plan, and a 30-minute review call."
 };
 
 const expectations = [
   {
-    title: "A real conversation",
-    body: "No slide deck. No pitch. We talk about what's actually happening in your business and where time or money is leaking.",
+    title: "A structured interview",
+    body: "We walk through how your week actually goes, where work piles up, and which tasks are costing you the most time.",
   },
   {
-    title: "Straight answers",
-    body: "I'll tell you if AI is the right move right now or if something else needs fixing first.",
+    title: "Specific prescriptions",
+    body: "You get 3–7 off-the-shelf AI or SaaS tools matched to your workflows, budget, and existing stack.",
   },
   {
-    title: "Clear next steps",
-    body: "You leave knowing exactly what working together would look like, or that we're not the right fit. Either way you get clarity.",
+    title: "A plan you can use",
+    body: "Your report includes an effort vs. impact matrix, a 4-day quick-start plan, financial impact analysis, and a 30-minute review call.",
   },
 ];
 
@@ -39,14 +39,14 @@ export default function BookPage() {
         <Container className="relative pt-20 pb-10 sm:pt-28 sm:pb-14 text-center">
           <span className="inline-flex items-center gap-2 rounded-full bg-ink-700/60 backdrop-blur px-4 py-1.5 border border-ink-400/20 text-xs font-mono uppercase tracking-[0.18em] text-ink-100">
             <span className="h-1.5 w-1.5 rounded-full bg-accent-500 animate-pulse" />
-            30 minutes · no pressure
+            45 minutes · $999 one-time
           </span>
           <h1 className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.0] text-ink-50 max-w-3xl mx-auto balance">
-            Book a <span className="italic text-accent-300">discovery call.</span>
+            Book your <span className="italic text-accent-300">AI assessment.</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-ink-200 max-w-2xl mx-auto leading-relaxed pretty">
-            Pick a time. We'll talk about your business, where you're spending too
-            much time or money, and whether AI is worth it.
+            Pick a time to walk through your week. We’ll find the work worth
+            changing and show you which tools to try first.
           </p>
         </Container>
       </section>
@@ -58,15 +58,9 @@ export default function BookPage() {
         <Container size="md">
           <div className="rounded-3xl bg-paper shadow-[0_30px_80px_-20px_rgba(0,0,0,0.5),0_0_0_1px_rgba(15,19,32,0.06)] overflow-hidden">
             <div className="px-4 sm:px-6 pt-6 pb-2 flex items-center justify-between border-b border-ink-100">
-              <Image
-                src="/strohmpartners-logo-nobg.png"
-                alt="Strohm Partners"
-                width={140}
-                height={32}
-                className="h-14 w-auto"
-              />
+              <Wordmark asLink={false} logoClassName="h-[5.25rem]" />
               <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-ink-500">
-                30-min · Google Meet
+                45-min · Google Meet
               </span>
             </div>
 
@@ -77,13 +71,13 @@ export default function BookPage() {
                 width="100%"
                 height="100%"
                 frameBorder={0}
-                title="Book a discovery call"
+                title="Book your AI Tools Assessment"
                 loading="lazy"
               />
             </div>
           </div>
           <p className="mt-4 text-center text-xs text-ink-300 font-mono uppercase tracking-wider">
-            Calendar not loading?{" "}
+              Calendar not loading?{" "}
             <a
               href={CALENDAR_SRC}
               target="_blank"
@@ -120,7 +114,7 @@ export default function BookPage() {
 
           <div className="mt-16 text-center">
             <p className="text-sm text-ink-300">
-              Prefer email?{" "}
+              Questions before booking?{" "}
               <a
                 href="mailto:hi@strohmpartners.com"
                 className="text-ink-100 underline-offset-4 hover:underline"

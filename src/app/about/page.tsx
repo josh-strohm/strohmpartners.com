@@ -7,7 +7,7 @@ import { CTABand } from "@/components/layout/CTABand";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "I'm Josh Strohm. I work directly with small and medium businesses as their AI partner. I find practical places where AI saves time and money, then build it with them."
+    "I'm Josh Strohm. I help small and medium businesses find useful AI tools and put them to work."
 };
 
 const values = [
@@ -21,7 +21,7 @@ const values = [
   },
   {
     title: "Talk like humans",
-    body: "Buzzword-filled decks don't help. I explain things plainly so the whole team understands what we're doing and why it matters.",
+    body: "Complicated presentations don't help. I explain things plainly so the whole team understands what we're doing and why it matters.",
   },
   {
     title: "Built to last",
@@ -47,13 +47,14 @@ export default function AboutPage() {
           <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 lg:gap-16 items-center">
             <div className="lg:col-span-7">
               <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.0] text-ink-50 max-w-4xl balance">
-                Your dedicated{" "}
-                <span className="italic text-accent-300">AI partner.</span>
+                A second set of hands for{" "}
+                <span className="italic text-accent-300">the busywork.</span>
               </h1>
               <p className="mt-8 text-lg sm:text-xl text-ink-200 max-w-2xl leading-relaxed pretty">
-                I'm Josh Strohm, founder of Strohm Partners. I work directly with
-                small and medium businesses to find the places where AI can save
-                real time and real money. Then I stick around and actually build it.
+                I’m Josh Strohm, founder of Strohm Partners. I work directly with
+                small and medium businesses to find tools that save time and money.
+                The AI Tools Assessment is where we start. If implementation makes
+                sense, I stick around and build it.
               </p>
             </div>
             <div className="mt-10 lg:mt-0 lg:col-span-5 flex justify-center lg:justify-end">
@@ -86,20 +87,20 @@ export default function AboutPage() {
             <div className="lg:col-span-7 flex flex-col gap-5 text-ink-100 text-lg leading-relaxed pretty">
               <p>
                 Most AI advice is written for huge companies with big budgets or
-                for startups chasing the next big thing. The regular businesses in
-                between, like the 25-person firm, the manufacturer with 60 people,
-                or the local company doing solid numbers, usually get ignored.
+                startups chasing the next big thing. Businesses in between often
+                get left out: the 25-person firm, the manufacturer with 60 people,
+                or the local company doing solid numbers.
               </p>
               <p>
-                I started Strohm Partners because I've been the person running a
-                business and wishing I had an extra set of hands that actually
-                understood the work. I bring consultant thinking, builder skills,
-                and the practical sense of someone who's had to make payroll.
+                I started Strohm Partners after running a business and wishing I
+                had an extra set of hands that understood the work. I bring
+                consultant thinking, builder skills, and the judgment that comes
+                from having to make payroll.
               </p>
               <p>
-                What you get is AI that fits how you work, not the other way around.
-                No lock-in. No jargon. No fancy deck that sits on a shelf. I stay
-                until the work is actually done.
+                You get tools that fit the way you already work. No lock-in, no
+                unnecessary complexity, and no fancy deck that sits on a shelf. I stay until the
+                work is done.
               </p>
             </div>
           </div>
@@ -111,8 +112,8 @@ export default function AboutPage() {
         <Container>
           <SectionHeader
             eyebrow="What I believe"
-            title="Four principles I live by."
-            description="These are the rules I use to decide what to build, what to recommend, and when to tell you AI isn't the answer right now."
+            title="Four rules I work by."
+            description="They shape what I recommend, what I build, and when I tell you AI is not the answer."
           />
           <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {values.map((v, i) => (
@@ -142,22 +143,22 @@ export default function AboutPage() {
         <Container>
           <SectionHeader
             eyebrow="Why work with me"
-            title="You get me, not a revolving door of consultants."
-            description="When you hire Strohm Partners, you work directly with the founder. The same person from day one."
+            title="You get the same person from start to finish."
+            description="When you hire Strohm Partners, you work directly with me. There is no handoff to a junior team."
           />
           <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3">
             {[
               {
                 title: "Direct access",
-                body: "The person on the first call is the one who builds it. No passing you off to someone else partway through.",
+                body: "The person on the first call is the person doing the work. You do not have to repeat the story halfway through.",
               },
               {
                 title: "Undivided focus",
-                body: "I keep my client list small so you get real attention, not whatever's left at the end of the week.",
+                body: "I keep my client list small so your project gets attention while it is still on the front burner.",
               },
               {
                 title: "Long-term partner",
-                body: "I'm not here to drop off a project and disappear. I learn your business and become the person you call when AI stuff comes up.",
+                body: "I learn how your business runs, then stay available when the next automation or tool question comes up.",
               },
             ].map((item) => (
               <div
@@ -187,8 +188,8 @@ export default function AboutPage() {
       <CTABand
         eyebrow="Get in touch"
         title="Let's talk about your business."
-        description="Tell me what's going on and where things are slow or expensive. I'll give you a straight answer on whether AI is worth it right now."
-        primaryCta={{ label: "Book a free AI audit", href: "/book" }}
+        description="Tell me what is slow, repetitive, or expensive. I will give you a straight answer on whether AI can help."
+        primaryCta={{ label: "Book your AI assessment", href: "/book" }}
         secondaryCta={{ label: "Read about my services", href: "/services" }}
       />
     </>

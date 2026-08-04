@@ -8,6 +8,26 @@ export const metadata: Metadata = buildLegalMetadata(
 
 const sections = [
   {
+    title: "AI Tools Assessment Guarantee",
+    body: (
+      <>
+        <p>
+          The AI Tools Assessment is a $999 one-time engagement that includes
+          a 45-minute structured interview, transcript analysis, a custom
+          report with 3–7 tool prescriptions, and a 30-minute review call.
+        </p>
+        <p>
+          <strong className="text-ink-50">Money-back guarantee:</strong> If
+          the assessment does not identify at least 5 hours per week in
+          potential time savings, you may request a 100% refund of the
+          assessment fee. This guarantee applies to the assessment only; it
+          does not apply to third-party tool subscriptions or separately scoped
+          implementation services.
+        </p>
+      </>
+    ),
+  },
+  {
     title: "AI Consulting & System Integration Scopes",
     body: (
       <>
@@ -107,8 +127,8 @@ const sections = [
     body: (
       <>
         <p>
-          We pride ourselves on honest partnerships, clear communication, and
-          premium delivery. If you are unsatisfied with a deliverable or
+          We aim for honest partnerships, direct communication, and quality
+          work. If you are unsatisfied with a deliverable or
           believe there has been a billing discrepancy:
         </p>
         <ul className="list-disc pl-5 flex flex-col gap-2 marker:text-accent-500">
@@ -148,10 +168,11 @@ export default function RefundPolicyPage() {
         <>
           <p>
             Strohm Partners LLC (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or
-            &ldquo;our&rdquo;) provides custom AI consulting, operational
-            audits, and custom system integration engineering services. Because
-            our services are highly tailored, we maintain clear guidelines
-            regarding billing, contract cancellations, and refunds.
+            &ldquo;our&rdquo;) provides AI Tools Assessments, custom AI consulting,
+            operational audits, and custom system integration engineering
+            services. Because our services range from a fixed-price assessment
+            to custom implementation work, we maintain straightforward
+            guidelines regarding billing, contract cancellations, and refunds.
           </p>
           <p className="mt-4">
             Please read this policy carefully before signing a service

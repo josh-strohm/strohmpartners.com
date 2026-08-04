@@ -41,7 +41,7 @@ export function Nav() {
           : "bg-transparent"
       )}
     >
-        <div className="mx-auto flex h-28 max-w-7xl items-center justify-between px-6 sm:px-8 lg:px-12">
+        <div className="mx-auto flex h-32 max-w-7xl items-center justify-between px-6 sm:px-8 lg:px-12">
           <Wordmark />
 
         <nav className="hidden md:flex items-center gap-1">
@@ -67,7 +67,7 @@ export function Nav() {
 
         <div className="hidden md:flex items-center gap-3">
           <Button href="/book" size="sm" variant="primary">
-            Book a call
+            Book assessment
             <span aria-hidden>→</span>
           </Button>
         </div>
@@ -123,7 +123,7 @@ export function Nav() {
           </div>
           <div className="mt-2 pt-2 border-t border-ink-700/50">
             <Button href="/book" size="md" variant="primary" className="w-full">
-              Book a call
+              Book assessment
               <span aria-hidden>→</span>
             </Button>
           </div>

@@ -102,10 +102,10 @@ export function LegalPage({
       </section>
 
       <CTABand
-        eyebrow="Let's work together"
-        title={<>Ready to talk about where AI fits?</>}
-        description="A 30-minute call. No pitch. Just a real conversation about your business and whether this makes sense."
-        primaryCta={{ label: "Book a discovery call", href: "/book" }}
+        eyebrow="Start with the assessment"
+        title={<>Ready to talk about getting time back?</>}
+        description="A 45-minute conversation about your workflows, the work taking too much time, and the tools worth trying first."
+        primaryCta={{ label: "Book your AI assessment", href: "/book" }}
         secondaryCta={{ label: "Or send a message", href: "/contact" }}
       />
     </>

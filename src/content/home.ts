@@ -4,137 +4,169 @@
 
 export const homeContent = {
   hero: {
-    eyebrow: "Practical help with AI",
-    titleStart: "AI that works for",
-    titleAccent: "your",
-    titleEnd: "business.",
+    eyebrow: "Less busywork. More room to run the business.",
+    titleStart: "Put",
+    titleAccent: "AI to work",
+    titleEnd: "on the parts of your week you keep putting off.",
     description:
-      "I work with small and medium businesses to find the spots where AI can actually save time and money. No buzzwords or big promises. I learn how you run things, recommend what makes sense, build it with you, and stick around until it's working in real life.",
-    primaryCta: { label: "Book a free AI audit", href: "/book" },
-    secondaryCta: { label: "See what I do", href: "/services" },
+      "In 45 minutes, we walk through your week, find the tasks worth changing, and choose 3–7 tools to try. No custom software unless it earns the cost.",
+    primaryCta: { label: "Book your AI assessment", href: "/book" },
+    secondaryCta: { label: "See how it works", href: "/services" },
   },
 
   valueStrips: [
     {
-      title: "Direct access to the founder",
+      title: "45 minutes together",
       description:
-        "You work with me, not a junior analyst or account manager. When you call, I pick up.",
+        "We look at the work itself, not a generic checklist, and find where time is getting burned.",
     },
     {
-      title: "AI that fits your business",
+      title: "3–7 tools to try",
       description:
-        "I learn how your business runs, then find the tools that stick. Every recommendation is based on your specific situation.",
+        "Each recommendation includes the cost, setup time, and the job it is meant to take off your plate.",
     },
     {
-      title: "No vendor kickbacks",
+      title: "A four-day start",
       description:
-        "If a tool doesn't make sense for you, I'll say so. I recommend what works for you, not what pays me a commission.",
+        "A short daily checklist for putting the easiest wins in place without disrupting the rest of the week.",
     },
     {
-      title: "I build it with you",
+      title: "Five hours back or a refund",
       description:
-        "I don't drop a report and disappear. I design, build, and train your team until the work is done.",
+        "If the assessment cannot find at least five hours a week to recover, I refund the assessment fee.",
     },
   ],
 
-  servicesEyebrow: "What I do",
-  servicesTitle: "From first look to something that actually runs.",
+  servicesEyebrow: "Where we start",
+  servicesTitle: "Start small. Add more only when it helps.",
   servicesDescription:
-    "I get to know how your business works, then stay involved from the first conversation through building, training, and tweaking. One person the whole way. No handoffs.",
+    "The AI Tools Assessment is the starting point. You can stop with the report or have me fix the process, connect your tools, and help your team use the result.",
   services: [
     {
-      tag: "Phase 01 · From $1,497",
-      title: "AI Opportunity Assessment",
+      tag: "Phase 01 · $999 one-time",
+      title: "AI Tools Assessment",
       summary:
-        "We spend a couple weeks digging into how your business actually runs day to day. I find the real opportunities where AI can save hours or help you handle more work without adding headcount.",
+        "A 45-minute conversation, transcript review, and report with the tools most likely to save you 5–10 hours each week.",
       bullets: [
-        "Walk through your processes and spot where AI fits",
-        "Realistic ROI numbers based on your actual numbers",
-        "Clear buy vs. build advice",
+        "3–7 tool prescriptions with cost, setup time, and expected savings",
+        "Effort vs. impact matrix and 4-day quick-start plan",
+        "Financial impact analysis plus a 30-minute review call",
       ],
     },
     {
-      tag: "Phase 02",
-      title: "Roadmap & Strategy",
+      tag: "After the assessment · $2,500–$3,000",
+      title: "Process Redesign",
       summary:
-        "You get a practical plan that matches your budget and how fast you want to move. We start with the quick wins and plan the bigger stuff for later.",
+        "If a process is messy, automating it just makes the mess faster. We map it, remove the extra steps, and write down the new version.",
       bullets: [
-        "90-day, 6-month, and 12-month view",
-        "Clear costs and effort. No surprises.",
-        "How to bring your team along without burning them out",
+        "Current-state process map",
+        "Future-state workflow blueprint",
+        "A simpler path from the first step to the finished job",
       ],
     },
     {
-      tag: "Phase 03",
-      title: "Build & Integrate",
+      tag: "After the assessment · $1,000",
+      title: "Simple Automation",
       summary:
-        "I build the actual tools, like automations, AI helpers, and simple custom apps, and wire them into the systems you're already using.",
+        "Small Zapier, Make, or n8n automations for work you repeat every day.",
       bullets: [
-        "Automations that don't break a month later",
-        "Custom tools made for how your team works",
-        "Plays nice with the software you already have",
+        "1–3 step workflow automations",
+        "Setup, testing, and handoff",
+        "Built around your existing software",
       ],
     },
     {
-      tag: "Phase 04",
-      title: "Train & Support",
+      tag: "After the assessment · Custom quote",
+      title: "Knowledge System",
       summary:
-        "I show your team how to use what we built and keep an eye on things as your business changes. You won't be left figuring it out alone.",
+        "A searchable home for your documents and answers, built around the questions your team actually asks.",
       bullets: [
-        "Hands-on training with the people who'll use it",
-        "Simple docs your team can actually use",
-        "Check-ins so things stay useful over time",
+        "Your documents and operating knowledge in one place",
+        "Answers based on your own files and procedures",
+        "Designed for the questions your team gets every day",
+      ],
+    },
+    {
+      tag: "After the assessment · From $2,500",
+      title: "Custom Workflows",
+      summary:
+        "AI helpers for the parts of your business that do not fit an off-the-shelf template. I show your team how to use them.",
+      bullets: [
+        "Custom workflows for the work that makes your business unique",
+        "Team training and implementation support",
+        "Optional maintenance as your processes evolve",
+      ],
+    },
+    {
+      tag: "After the assessment · From $7,500",
+      title: "Full Implementation",
+      summary:
+        "For a larger project, I can handle the redesign, build, rollout, and training in one engagement.",
+      bullets: [
+        "Any combination of redesign, workflows, and automation",
+        "One project plan with the work and price spelled out",
+        "Implementation, training, and handoff",
+      ],
+    },
+    {
+      tag: "After the assessment · $1,000/month",
+      title: "AI Concierge",
+      summary:
+        "A monthly block of time for strategy, builds, and the small fixes that keep piling up.",
+      bullets: [
+        "Two strategy calls each month",
+        "Build AI skills together, live",
+        "Unlimited async access between calls",
       ],
     },
   ],
 
-  processEyebrow: "How I work",
-  processTitle: "From first conversation to something working in weeks, not quarters.",
+  processEyebrow: "How the assessment works",
+  processTitle: "Talk on Monday. Start with the first tools by Friday.",
   processSteps: [
     {
       n: "01",
-      title: "Discovery call",
+      title: "The conversation",
       description:
-        "30 minutes. Tell me about your business, what's eating up your time, and where you wish you had more hands. No pitch. Just a real conversation.",
+        "We meet on Google Meet for 45 minutes. You show me how the week runs, where work piles up, and which tasks you would gladly stop doing.",
     },
     {
       n: "02",
-      title: "Assessment",
+      title: "Tool research",
       description:
-        "I spend two or three weeks looking at how you actually work and come back with a clear picture of where AI can help, plus numbers you can believe.",
+        "I review what we discussed, compare the tools that fit, and check the price, setup, and likely payoff for each one.",
     },
     {
       n: "03",
-      title: "Roadmap & proposal",
+      title: "The report",
       description:
-        "You get a plan with real costs and timelines. You pick what to do and when. Nothing gets sprung on you later.",
+        "You get a report with 3–7 recommendations, an effort vs. impact matrix, a four-day starting plan, and the expected monthly savings.",
     },
     {
       n: "04",
-      title: "Build & handoff",
+      title: "The next step",
       description:
-        "I build it, get your team using it, and make sure it sticks. Then I'm around if you need help later.",
+        "We spend 30 minutes going through the report, choosing what to try first, and deciding whether you want help putting it in place.",
     },
   ],
 
-  socialProofEyebrow: "Work I've done",
-  socialProofTitle:
-    "Real businesses. Real results.",
+  socialProofEyebrow: "A few things I've built",
+  socialProofTitle: "Work that holds up on a busy day.",
   socialProofDescription:
-    "I've built websites and simple automations for companies in a bunch of industries. Here are two recent ones.",
+    "The assessment is the starting point. From there, I can help with websites, lead follow-up, and the automations that keep routine work moving.",
   portfolio: [
     {
       tag: "Website + Automation",
       title: "JT3 Hauling",
       description:
-        "New website for a hauling company plus backend automation. Contact form submissions go straight to the owner's email and the visitor gets an automatic reply. Customers hear back fast even when the office is busy.",
+        "A new site and a simple follow-up system for a hauling company. New inquiries go to the owner and receive an automatic reply, even when the office is busy.",
       url: "https://www.jt3hauling.com",
     },
     {
       tag: "Website + Automation",
       title: "Mrs. Red Bottoms Cleaning",
       description:
-        "Custom site for a cleaning company with the same setup: new leads land in the owner's inbox with an auto-reply that sounds like them. Inquiries don't sit around waiting for someone to notice.",
+        "A custom site and lead follow-up for a cleaning company. New inquiries land in the owner's inbox and get a reply written in the company's voice.",
       url: "https://www.mrsredbottomscleaning.com",
     },
   ],
@@ -148,12 +180,12 @@ export const homeContent = {
   ],
 
   outcomes: [
-    "Leads answered in minutes",
-    "Zero leads lost",
-    "Instant owner alerts",
-    "20-30 hours saved monthly",
-    "Consistent replies 24/7",
-    "Faster handoffs inside the team",
-    "You get your time back",
+    "Hours back each week",
+    "Tools you can actually use",
+    "Cost and savings on paper",
+    "Ten minutes to start",
+    "Existing software first",
+    "No build until it earns one",
+    "Less time spent chasing details",
   ],
 };

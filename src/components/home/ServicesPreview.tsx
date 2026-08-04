@@ -15,12 +15,15 @@ export function ServicesPreview() {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {homeContent.services.map((s, i) => {
               const isLarge = i === 0;
+              const isFeatured = s.title === "AI Concierge";
               return (
                 <a
                   key={s.title}
                   href="/services"
                   className={`group relative overflow-hidden rounded-2xl bg-ink-700/70 p-8 border border-ink-400/30 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.7)] transition-all duration-300 hover:bg-ink-700 hover:border-ink-400/50 hover:-translate-y-0.5 hover:shadow-[0_0_50px_-12px_rgba(56,189,248,0.35)] block ${
-                    isLarge ? "md:col-span-2 lg:col-span-2 lg:row-span-1" : ""
+                    isLarge || isFeatured
+                      ? "md:col-span-2 lg:col-span-2 lg:row-span-1"
+                      : ""
                   }`}
                 >
                   <div

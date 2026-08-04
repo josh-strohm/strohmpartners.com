@@ -18,10 +18,10 @@ export default function HomePage() {
       <IdealClient />
       <SocialProof />
       <CTABand
-        eyebrow="Let's work together"
-        title={<>Let's find where AI actually helps.</>}
-        description="A 30-minute call. We'll talk about your business and whether AI is worth it. No pitch."
-        primaryCta={{ label: "Book a free AI audit", href: "/book" }}
+        eyebrow="Start with the assessment"
+        title={<>Stop losing hours to work a tool could handle.</>}
+        description="A 45-minute conversation, 3–7 specific recommendations, and a short plan for putting the easiest wins in place."
+        primaryCta={{ label: "Book your $999 assessment", href: "/book" }}
         secondaryCta={{ label: "Or send a message", href: "/contact" }}
       />
     </>

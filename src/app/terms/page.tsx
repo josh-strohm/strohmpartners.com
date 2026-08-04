@@ -12,15 +12,14 @@ const sections = [
     body: (
       <>
         <p>
-          Strohm Partners LLC is an AI consulting and systems engineering firm
-          specializing in operational optimization and custom AI integrations,
-          including:
+          Strohm Partners LLC provides a fixed-price AI Tools Assessment and
+          optional implementation services, including:
         </p>
         <ul className="list-disc pl-5 flex flex-col gap-2 marker:text-accent-500">
-          <li>AI operational audits, workflow diagnostics, and operational bottleneck mapping.</li>
-          <li>Intelligent acquisition funnels and custom web-based lead qualification systems.</li>
-          <li>Content voice engineering, training frameworks, and custom prompt architectures.</li>
-          <li>Custom API integrations, intelligent back-office pipelines, and data-extraction systems.</li>
+          <li>AI Tools Assessments with workflow analysis, tool prescriptions, quick-start plans, and ROI analysis.</li>
+          <li>Process redesign, simple automation, and knowledge systems.</li>
+          <li>Custom AI workflows, full implementation packages, and team training.</li>
+          <li>Ongoing AI Concierge strategy and implementation support.</li>
         </ul>
         <p>
           Specific scopes of work, consulting milestones, roadmaps, and custom
@@ -81,7 +80,7 @@ const sections = [
           Any pre-existing tools, open-source libraries, or third-party SaaS
           platforms (e.g., Make.com, Zapier, Webflow, Stripe, OpenAI,
           Anthropic) utilized in your custom integrations remain subject to
-          their respective creators' and platforms' licensing terms, which you
+          their respective creators’ and platforms’ licensing terms, which you
           are responsible for maintaining directly.
         </p>
       </>
@@ -105,7 +104,7 @@ const sections = [
     body: (
       <p>
         Our systems and services are provided on an &ldquo;as is&rdquo; and
-        &ldquo;as available&rdquo; basis. While we strive to build robust,
+        &ldquo;as available&rdquo; basis. While we strive to build reliable,
         highly automated workflows, Strohm Partners LLC does not guarantee that
         third-party APIs or automated pipelines will run continuously without
         occasional service disruptions, as their performance is dependent on

@@ -24,7 +24,7 @@ const expectations = [
 ];
 
 const CALENDAR_SRC =
-  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2lnFVDVF4oKIzE6ZHDeeyE7cLSIGsE79nUYZPvsPWxz8a6Do7nJDVXq1uwyqJVtig3pMaB3tg7?gv=true";
+  "https://cal.com/josh-strohm";
 
 export default function BookPage() {
   return (
@@ -52,7 +52,7 @@ export default function BookPage() {
       </section>
 
       {/* LIGHT SECTION | calendar wrapper has a light surface so the
-          Google Calendar embed's white UI is fully visible. We transition
+          Cal.com embed's UI is fully visible. We transition
           from the dark site into a light "card" then back to dark. */}
       <section className="pb-16">
         <Container size="md">
@@ -60,7 +60,7 @@ export default function BookPage() {
             <div className="px-4 sm:px-6 pt-6 pb-2 flex items-center justify-between border-b border-ink-100">
               <Wordmark asLink={false} logoClassName="h-[5.25rem]" />
               <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-ink-500">
-                45-min · Google Meet
+                Available times · Cal.com
               </span>
             </div>
 

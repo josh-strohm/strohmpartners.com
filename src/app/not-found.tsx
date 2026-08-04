@@ -15,10 +15,10 @@ export default function NotFound() {
             404 · page not found
           </span>
           <h1 className="mt-4 font-display text-6xl sm:text-7xl text-ink-50 leading-[1.0] balance">
-            That page <span className="italic text-accent-300">doesn't exist.</span>
+            That page <span className="italic text-accent-300">does not exist.</span>
           </h1>
           <p className="mt-6 text-lg text-ink-200 max-w-xl leading-relaxed pretty">
-            That link is probably old or I moved something. Let's get you back on track.
+            That link is probably old or I moved something. Let us get you back home.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Button href="/" variant="primary" size="md">
@@ -28,7 +28,7 @@ export default function NotFound() {
               See services
             </Button>
             <Button href="/book" variant="ghost" size="md">
-              Book a call
+              Book an assessment
             </Button>
           </div>
         </div>

@@ -15,10 +15,10 @@ type CTABandProps = {
  * Subtle accent gradient + grid texture.
  */
 export function CTABand({
-  eyebrow = "Ready to start?",
+  eyebrow = "Have a project in mind?",
   title,
   description,
-  primaryCta = { label: "Book a discovery call", href: "/book" },
+  primaryCta = { label: "Book an assessment", href: "/book" },
   secondaryCta,
 }: CTABandProps) {
   return (

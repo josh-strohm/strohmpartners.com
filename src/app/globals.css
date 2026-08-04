@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ============================================================
-   STROHM PARTNERS LLC — Design System Tokens
+   STROHM PARTNERS LLC: Design System Tokens
    Dark-first editorial-tech hybrid. Vercel/Linear territory.
    ============================================================ */
 
@@ -20,7 +20,7 @@
   --color-ink-100: #C8CDD8;   /* body text */
   --color-ink-50:  #F0EFE8;   /* high contrast / "paper" */
 
-  /* Accent — sky blue */
+  /* Accent: sky blue */
   --color-accent-500: #38BDF8;  /* primary accent */
   --color-accent-400: #5CC8FA;
   --color-accent-600: #0EA5E9;  /* hover */

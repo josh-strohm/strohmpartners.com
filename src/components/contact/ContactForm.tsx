@@ -120,7 +120,7 @@ export function ContactForm() {
         <textarea
           id="message"
           rows={5}
-          placeholder="A few sentences about your business and what you need help with…"
+          placeholder="A few sentences about your business and what you need help with."
           {...register("message")}
           className={cn(
             "w-full rounded-xl bg-ink-900/60 border px-4 py-3 text-[15px] text-ink-50",
@@ -161,7 +161,7 @@ export function ContactForm() {
           role="status"
           className="rounded-xl border border-success/40 bg-success/10 px-4 py-3 text-sm text-success"
         >
-          Got it. I'll be in touch within one business day.
+          Got it. I will be in touch within one business day.
         </div>
       )}
       {status === "error" && (

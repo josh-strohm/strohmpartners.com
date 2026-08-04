@@ -24,7 +24,7 @@ const expectations = [
 ];
 
 const CALENDAR_SRC =
-  "https://cal.com/josh-strohm";
+  "https://cal.com/strohm-partners";
 
 export default function BookPage() {
   return (

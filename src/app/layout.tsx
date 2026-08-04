@@ -41,6 +41,10 @@ export const metadata: Metadata = {
     url: "https://strohmpartners.com",
   },
   twitter: { card: "summary_large_image" },
+  icons: {
+    icon: "/strohm-partners-favicon.jpg",
+    shortcut: "/strohm-partners-favicon.jpg",
+  },
   robots: { index: true, follow: true },
 };
 

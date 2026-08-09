@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { StrohmFormEmbed } from "@/components/contact/StrohmFormEmbed";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withCanonical("/test", {
   title: "Test",
   description: "Test page for the Strohm contact form embed.",
   robots: { index: false, follow: false },
-};
+});
 
 export default function TestPage() {
   return (

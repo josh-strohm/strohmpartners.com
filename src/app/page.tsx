@@ -6,6 +6,9 @@ import { HowWeWork } from "@/components/home/HowWeWork";
 import { IdealClient } from "@/components/home/IdealClient";
 import { SocialProof } from "@/components/home/SocialProof";
 import { CTABand } from "@/components/layout/CTABand";
+import { withCanonical } from "@/lib/seo";
+
+export const metadata = withCanonical("/", {});
 
 export default function HomePage() {
   return (

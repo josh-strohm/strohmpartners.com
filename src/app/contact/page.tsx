@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { siteContent } from "@/content/site";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withCanonical("/contact", {
   title: "Contact",
   description:
     "Get in touch. I read and reply to every message myself, usually within a business day."
-};
+});
 
 export default function ContactPage() {
   return (

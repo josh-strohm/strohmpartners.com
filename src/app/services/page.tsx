@@ -3,12 +3,13 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { CTABand } from "@/components/layout/CTABand";
 import { homeContent } from "@/content/home";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withCanonical("/services", {
   title: "Services",
   description:
     "Start with a $999 AI Tools Assessment, then get help with process redesign, automation, knowledge systems, custom workflows, or ongoing support."
-};
+});
 
 const faqs = [
   {

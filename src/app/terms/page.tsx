@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { LegalPage, buildLegalMetadata } from "@/components/legal/LegalPage";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = buildLegalMetadata(
+export const metadata: Metadata = withCanonical("/terms", buildLegalMetadata(
   "Terms of Service",
   "The terms and conditions governing your use of Strohm Partners' services and website."
-);
+));
 
 const sections = [
   {

@@ -14,7 +14,7 @@ const schema = z.object({
   phone: z.string().optional(),
   company: z.string().optional(),
   website: z.string().optional(),
-  message: z.string().min(10, "Tell me a bit more, at least 10 characters."),
+  message: z.string().min(10, "Please tell me a little more, at least 10 characters."),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -58,7 +58,7 @@ export function ContactForm() {
           Send a message
         </h2>
         <p className="mt-2 text-sm text-ink-300">
-          I respond within one business day.
+          I usually reply within one business day.
         </p>
       </div>
 
@@ -120,7 +120,7 @@ export function ContactForm() {
         <textarea
           id="message"
           rows={5}
-          placeholder="A few sentences about your business and what you need help with."
+          placeholder="A few sentences about your business and what you would like to change."
           {...register("message")}
           className={cn(
             "w-full rounded-xl bg-ink-900/60 border px-4 py-3 text-[15px] text-ink-50",
@@ -138,7 +138,7 @@ export function ContactForm() {
 
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
         <p className="text-xs text-ink-300">
-          By submitting, you agree that I can reach out about your inquiry.
+          By submitting this form, you agree that I can contact you about your inquiry.
         </p>
         <button
           type="submit"
@@ -151,7 +151,7 @@ export function ContactForm() {
             "hover:shadow-[0_0_0_1px_rgba(56,189,248,0.5),0_0_35px_8px_rgba(56,189,248,0.45)]"
           )}
         >
-          {isSubmitting ? "Sending…" : "Send message"}
+          {isSubmitting ? "Sending" : "Send message"}
           {!isSubmitting && <span aria-hidden>→</span>}
         </button>
       </div>
@@ -161,7 +161,7 @@ export function ContactForm() {
           role="status"
           className="rounded-xl border border-success/40 bg-success/10 px-4 py-3 text-sm text-success"
         >
-          Got it. I will be in touch within one business day.
+          Got it. I’ll be in touch within one business day.
         </div>
       )}
       {status === "error" && (
@@ -169,7 +169,7 @@ export function ContactForm() {
           role="alert"
           className="rounded-xl border border-danger/40 bg-danger/10 px-4 py-3 text-sm text-danger"
         >
-          Something went wrong sending your message. Please email{" "}
+          I could not send your message. Please email{" "}
           <a
             href="mailto:help@strohmpartners.com"
             className="underline underline-offset-2"

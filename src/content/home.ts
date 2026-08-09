@@ -9,7 +9,7 @@ export const homeContent = {
     titleAccent: "AI to work",
     titleEnd: "on the parts of your week you keep putting off.",
     description:
-      "In 45 minutes, we walk through your week, find the tasks worth changing, and choose 3–7 tools to try. No custom software unless it earns the cost.",
+      "In 45 minutes, we look at how your week really works, find the time drains, and pick 3–7 tools worth trying. I only recommend custom software when it will pay for itself.",
     primaryCta: { label: "Book your AI assessment", href: "/book" },
     secondaryCta: { label: "See how it works", href: "/services" },
   },
@@ -40,16 +40,16 @@ export const homeContent = {
   servicesEyebrow: "Where we start",
   servicesTitle: "Start small. Add more only when it helps.",
   servicesDescription:
-    "The AI Tools Assessment is the starting point. You can stop with the report or have me fix the process, connect your tools, and help your team use the result.",
+    "We start with the AI Tools Assessment. You can take the report and run with it, or have me simplify the process, connect your tools, and help your team put the changes to work.",
   services: [
     {
       tag: "Phase 01 · $999 one-time",
       title: "AI Tools Assessment",
       summary:
-        "A 45-minute conversation, transcript review, and report with the tools most likely to save you 5–10 hours each week.",
+        "We spend 45 minutes looking at your week, then send a report with the tools most likely to save you 5–10 hours.",
       bullets: [
-        "3–7 tool prescriptions with cost, setup time, and expected savings",
-        "Effort vs. impact matrix and 4-day quick-start plan",
+        "3–7 tool recommendations with cost, setup time, and expected savings",
+        "Effort vs. impact matrix and four-day quick-start plan",
         "Financial impact analysis plus a 30-minute review call",
       ],
     },
@@ -57,10 +57,10 @@ export const homeContent = {
       tag: "After the assessment · $2,500–$3,000",
       title: "Process Redesign",
       summary:
-        "If a process is messy, automating it just makes the mess faster. We map it, remove the extra steps, and write down the new version.",
+        "When a process is messy, automation only makes it faster. We map what happens now, cut the unnecessary steps, and document a cleaner way to work.",
       bullets: [
-        "Current-state process map",
-        "Future-state workflow blueprint",
+        "A map of the process as it works today",
+        "A clear plan for the improved workflow",
         "A simpler path from the first step to the finished job",
       ],
     },
@@ -70,7 +70,7 @@ export const homeContent = {
       summary:
         "Small Zapier, Make, or n8n automations for work you repeat every day.",
       bullets: [
-        "1–3 step workflow automations",
+        "One to three step workflow automations",
         "Setup, testing, and handoff",
         "Built around your existing software",
       ],
@@ -79,22 +79,22 @@ export const homeContent = {
       tag: "After the assessment · Custom quote",
       title: "Knowledge System",
       summary:
-        "A searchable home for your documents and answers, built around the questions your team actually asks.",
+        "A searchable place for your documents and answers, built around the questions your team asks most often.",
       bullets: [
         "Your documents and operating knowledge in one place",
         "Answers based on your own files and procedures",
-        "Designed for the questions your team gets every day",
+        "A setup built around the questions your team gets every day",
       ],
     },
     {
       tag: "After the assessment · From $2,500",
       title: "Custom Workflows",
       summary:
-        "AI helpers for the parts of your business that do not fit an off-the-shelf template. I show your team how to use them.",
+        "AI helpers for work that does not fit an off-the-shelf template. I show your team how to use them.",
       bullets: [
         "Custom workflows for the work that makes your business unique",
         "Team training and implementation support",
-        "Optional maintenance as your processes evolve",
+        "Optional maintenance as your processes change",
       ],
     },
     {
@@ -112,10 +112,10 @@ export const homeContent = {
       tag: "After the assessment · $1,000/month",
       title: "AI Concierge",
       summary:
-        "A monthly block of time for strategy, builds, and the small fixes that keep piling up.",
+        "A set amount of time each month for strategy, builds, and the small fixes that keep piling up.",
       bullets: [
         "Two strategy calls each month",
-        "Build AI skills together, live",
+        "Build useful AI skills together, live",
         "Unlimited async access between calls",
       ],
     },
@@ -128,19 +128,19 @@ export const homeContent = {
       n: "01",
       title: "The conversation",
       description:
-        "We meet on Google Meet for 45 minutes. You show me how the week runs, where work piles up, and which tasks you would gladly stop doing.",
+        "We meet on Google Meet for 45 minutes. You show me how the week runs, where work piles up, and which tasks you would be happy to stop doing.",
     },
     {
       n: "02",
       title: "Tool research",
       description:
-        "I review what we discussed, compare the tools that fit, and check the price, setup, and likely payoff for each one.",
+        "I review our conversation, compare the tools that fit, and check the price, setup, and likely payoff for each one.",
     },
     {
       n: "03",
       title: "The report",
       description:
-        "You get a report with 3–7 recommendations, an effort vs. impact matrix, a four-day starting plan, and the expected monthly savings.",
+        "You get 3–7 recommendations, an effort vs. impact matrix, a four-day starting plan, and the expected monthly savings.",
     },
     {
       n: "04",
@@ -182,10 +182,10 @@ export const homeContent = {
   outcomes: [
     "Hours back each week",
     "Tools you can actually use",
-    "Cost and savings on paper",
-    "Ten minutes to start",
-    "Existing software first",
-    "No build until it earns one",
+    "Costs and savings on paper",
+    "Ten minutes to get moving",
+    "Your existing software first",
+    "No build until it earns its place",
     "Less time spent chasing details",
   ],
 };

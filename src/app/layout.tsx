@@ -29,13 +29,13 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Strohm Partners | Put AI to work on the busywork",
-    template: "%s · Strohm Partners",
+    default: "Strohm Partners | Practical help for the work slowing you down",
+    template: "%s | Strohm Partners",
   },
   description:
-    "A 45-minute AI Tools Assessment that finds the work slowing you down and recommends 3–7 tools to try.",
+    "A 45-minute AI Tools Assessment to find the work slowing you down and choose 3–7 tools worth trying.",
   openGraph: {
-    title: "Strohm Partners | Put AI to work on the busywork",
+    title: "Strohm Partners | Practical help for the work slowing you down",
     description:
       "A 45-minute conversation about the work slowing you down, with 3–7 tools matched to your business.",
     type: "website",

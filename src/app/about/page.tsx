@@ -8,25 +8,25 @@ import { withCanonical } from "@/lib/seo";
 export const metadata: Metadata = withCanonical("/about", {
   title: "About",
   description:
-    "I'm Josh Strohm. I help small and medium businesses find useful AI tools and put them to work."
+    "I'm Josh Strohm. I help small and medium businesses find practical AI tools and put them to work.",
 });
 
 const values = [
   {
     title: "Keep it simple",
-    body: "I'd rather build something your team actually uses than something impressive that nobody touches. If AI isn't the right answer, I'll say so up front.",
+    body: "I would rather build something your team uses than something impressive that nobody touches. If AI is not the right answer, I will say so up front.",
   },
   {
     title: "Your business comes first",
-    body: "I don't have a favorite tool or vendor. I pick whatever fits your team, budget, and how you actually work, even if it's not the shiny new thing.",
+    body: "I do not have a favorite tool or vendor. I choose what fits your team, budget, and day-to-day work, even when it is not the newest thing.",
   },
   {
     title: "Talk like humans",
-    body: "Complicated presentations don't help. I explain things plainly so the whole team understands what we're doing and why it matters.",
+    body: "Complicated presentations do not help. I explain things plainly so everyone understands what we are doing and why it matters.",
   },
   {
     title: "Built to last",
-    body: "I build things your team can run without me. (I'm still here when you want to talk through the next idea though.)",
+    body: "I build things your team can run without me. I am still here when you want to talk through the next idea.",
   },
 ];
 
@@ -54,8 +54,8 @@ export default function AboutPage() {
               <p className="mt-8 text-lg sm:text-xl text-ink-200 max-w-2xl leading-relaxed pretty">
                 I’m Josh Strohm, founder of Strohm Partners. I work directly with
                 small and medium businesses to find tools that save time and money.
-                The AI Tools Assessment is where we start. If implementation makes
-                sense, I stick around and build it.
+                We start with the AI Tools Assessment. If implementation makes
+                sense, I stay and build it with you.
               </p>
             </div>
             <div className="mt-10 lg:mt-0 lg:col-span-5 flex justify-center lg:justify-end">
@@ -189,7 +189,7 @@ export default function AboutPage() {
       <CTABand
         eyebrow="Get in touch"
         title="Let's talk about your business."
-        description="Tell me what is slow, repetitive, or expensive. I will give you a straight answer on whether AI can help."
+        description="Tell me what is slow, repetitive, or expensive. I will give you a straight answer about whether AI can help."
         primaryCta={{ label: "Book your AI assessment", href: "/book" }}
         secondaryCta={{ label: "Read about my services", href: "/services" }}
       />

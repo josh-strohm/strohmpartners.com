@@ -17,15 +17,14 @@ const sections = [
           optional implementation services, including:
         </p>
         <ul className="list-disc pl-5 flex flex-col gap-2 marker:text-accent-500">
-          <li>AI Tools Assessments with workflow analysis, tool prescriptions, quick-start plans, and ROI analysis.</li>
+          <li>AI Tools Assessments with workflow review, tool recommendations, quick-start plans, and savings analysis.</li>
           <li>Process redesign, simple automation, and knowledge systems.</li>
-          <li>Custom AI workflows, full implementation packages, and team training.</li>
+          <li>Custom AI workflows, implementation projects, and team training.</li>
           <li>Ongoing AI Concierge strategy and implementation support.</li>
         </ul>
         <p>
-          Specific scopes of work, consulting milestones, roadmaps, and custom
-          engineering deliverables will be detailed in individual service
-          agreements or statements of work signed between you and Strohm
+          The exact work, milestones, deadlines, and deliverables will appear in
+          the service agreement or statement of work you sign with Strohm
           Partners LLC.
         </p>
       </>
@@ -36,28 +35,24 @@ const sections = [
     body: (
       <>
         <p>
-          Clients agree to pay all fees specified in the relevant invoice,
-          statement of work, or consulting agreement. Payments are processed
-          securely via Stripe or bank transfer, as outlined in your billing
-          agreement.
+          You agree to pay the fees listed in your invoice, statement of work,
+          or consulting agreement. We accept payment by Stripe or bank transfer,
+          as described in your billing agreement.
         </p>
         <p>
-          <strong className="text-ink-50">Milestone-Based Billing:</strong>{" "}
-          Custom consulting and system integration engagements are typically
-          billed in structural stages (e.g., diagnostic audit deposit, systems
-          architecture approval, staging integration, and production launch).
+          <strong className="text-ink-50">Milestone billing:</strong> Custom
+          consulting and integration projects are usually billed in stages,
+          such as the initial audit, systems design, staging, and launch.
         </p>
         <p>
-          <strong className="text-ink-50">Retainers and Subscriptions:</strong>{" "}
-          Ongoing support, system optimization, prompt tuning, and active
-          database monitoring agreements are billed in advance on a recurring
-          monthly or annual basis.
+          <strong className="text-ink-50">Retainers and subscriptions:</strong>{" "}
+          Ongoing support, system updates, prompt tuning, and database
+          monitoring are billed in advance each month or year.
         </p>
         <p>
-          <strong className="text-ink-50">Late Payments:</strong> We reserve the
-          right to temporarily suspend active systems integrations or ongoing
-          consulting delivery if payments remain outstanding past their due
-          date.
+          <strong className="text-ink-50">Late payments:</strong> We may pause
+          active integrations or consulting work while an invoice remains
+          overdue.
         </p>
       </>
     ),
@@ -67,22 +62,20 @@ const sections = [
     body: (
       <>
         <p>
-          At Strohm Partners, we believe you should fully own the AI systems we
-          design and engineer for you.
+          At Strohm Partners, we believe you should own the custom systems we
+          build for your business.
         </p>
         <p>
-          Upon receipt of full payment for completed services, Strohm Partners
-          LLC transfers and assigns to you all intellectual property rights,
-          title, and interest in and to the custom prompt frameworks, database
-          configurations, API integrations, and code built specifically for
-          your business under our agreement.
+          After you pay in full for the agreed work, Strohm Partners LLC
+          transfers to you its rights and interest in the custom prompt
+          frameworks, database configurations, integrations, and code created
+          specifically for your business.
         </p>
         <p>
-          Any pre-existing tools, open-source libraries, or third-party SaaS
-          platforms (e.g., Make.com, Zapier, Webflow, Stripe, OpenAI,
-          Anthropic) utilized in your custom integrations remain subject to
-          their respective creators’ and platforms’ licensing terms, which you
-          are responsible for maintaining directly.
+          Tools you already use, open-source libraries, and third-party services
+          such as Make.com, Zapier, Webflow, and Stripe remain governed by their
+          own licenses. You are responsible for maintaining those accounts and
+          subscriptions.
         </p>
       </>
     ),
@@ -91,11 +84,11 @@ const sections = [
     title: "Client Responsibilities",
     body: (
       <>
-        <p>To ensure successful implementation, clients agree to:</p>
+        <p>To keep a project moving, you agree to:</p>
         <ul className="list-disc pl-5 flex flex-col gap-2 marker:text-accent-500">
-          <li>Provide timely access to necessary accounts, digital assets, and guidelines.</li>
-          <li>Review deliverables and provide feedback within agreed timelines.</li>
-          <li>Maintain the active subscriptions for third-party platforms utilized in their workflows.</li>
+          <li>Provide timely access to the accounts, files, and instructions we need.</li>
+          <li>Review deliverables and send feedback within the agreed timeline.</li>
+          <li>Keep active subscriptions for third-party services used in your workflows.</li>
         </ul>
       </>
     ),
@@ -104,12 +97,10 @@ const sections = [
     title: "Disclaimer of Warranties",
     body: (
       <p>
-        Our systems and services are provided on an &ldquo;as is&rdquo; and
-        &ldquo;as available&rdquo; basis. While we strive to build reliable,
-        highly automated workflows, Strohm Partners LLC does not guarantee that
-        third-party APIs or automated pipelines will run continuously without
-        occasional service disruptions, as their performance is dependent on
-        external service providers.
+        Our systems and services are provided as-is and as available. We work to
+        build reliable workflows, but we cannot guarantee that third-party APIs
+        or automated pipelines will run without interruptions. Their availability
+        depends on outside providers.
       </p>
     ),
   },
@@ -117,11 +108,10 @@ const sections = [
     title: "Limitation of Liability",
     body: (
       <p>
-        To the maximum extent permitted by law, Strohm Partners LLC shall not
-        be liable for any indirect, incidental, special, consequential, or
-        punitive damages, or any loss of profits, data, or business
-        opportunities arising out of or related to your use of our services or
-        website.
+        To the fullest extent allowed by law, Strohm Partners LLC is not liable
+        for indirect, incidental, special, consequential, or punitive damages,
+        or for lost profits, data, or business opportunities resulting from your
+        use of our services or website.
       </p>
     ),
   },
@@ -129,10 +119,9 @@ const sections = [
     title: "Governing Law",
     body: (
       <p>
-        These Terms and any dispute arising from your use of our site or
-        services shall be governed by and construed in accordance with the
-        laws of the State of Delaware, without regard to its conflict of law
-        provisions.
+        These Terms and any dispute about your use of our website or services
+        are governed by the laws of the State of Delaware, without regard to
+        its conflict-of-law rules.
       </p>
     ),
   },
@@ -140,10 +129,9 @@ const sections = [
     title: "Changes to These Terms",
     body: (
       <p>
-        We reserve the right to modify these Terms at any time. Any changes
-        will be posted on this page with an updated &ldquo;Last
-        Updated&rdquo; date. Your continued engagement with our services
-        following updates constitutes acceptance of the revised Terms.
+        We may change these Terms from time to time. We will post changes here
+        with a new Last Updated date. If you continue using our services after
+        a change takes effect, you accept the revised Terms.
       </p>
     ),
   },
@@ -156,16 +144,15 @@ export default function TermsOfServicePage() {
       intro={
         <>
           <p>
-            Welcome to Strohm Partners. These Terms of Service
-            (&ldquo;Terms&rdquo;) govern your access to and use of the services,
-            website, and digital systems provided by Strohm Partners LLC
-            (&ldquo;Strohm Partners,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or
-            &ldquo;our&rdquo;).
+            Welcome to Strohm Partners. These Terms of Service (&ldquo;Terms&rdquo;)
+            govern your use of our website, services, and digital systems.
+            Strohm Partners LLC is referred to in these Terms as
+            &ldquo;Strohm Partners,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or
+            &ldquo;our.&rdquo;
           </p>
           <p className="mt-4">
-            By accessing our website or engaging us for services, you agree to
-            be bound by these Terms. If you do not agree to these Terms, please
-            do not use our website or services.
+            By using our website or hiring us, you agree to these Terms. If you
+            do not agree, please do not use the website or our services.
           </p>
           <p className="mt-4 text-sm text-ink-300">Last updated: May 19, 2026</p>
         </>

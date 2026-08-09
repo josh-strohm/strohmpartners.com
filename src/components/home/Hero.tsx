@@ -81,7 +81,7 @@ export function Hero() {
         >
           {[
             { k: "45 min", v: "Structured assessment" },
-            { k: "3–7", v: "Tool prescriptions" },
+            { k: "3–7", v: "Tool recommendations" },
             { k: "$999", v: "One-time investment" },
             { k: "5+ hrs", v: "Back every week or refunded" },
           ].map((s) => (

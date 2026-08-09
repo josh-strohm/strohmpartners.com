@@ -6,7 +6,7 @@ import { withCanonical } from "@/lib/seo";
 export const metadata: Metadata = withCanonical("/book", {
   title: "Book your AI Tools Assessment",
   description:
-    "Book your $999 AI Tools Assessment: a 45-minute interview, 3–7 tool prescriptions, a quick-start plan, and a 30-minute review call."
+    "Book your $999 AI Tools Assessment: a 45-minute conversation, 3–7 tool recommendations, a quick-start plan, and a 30-minute review call."
 });
 
 const expectations = [
@@ -15,12 +15,12 @@ const expectations = [
     body: "We walk through how your week actually goes, where work piles up, and which tasks are costing you the most time.",
   },
   {
-    title: "Specific prescriptions",
+    title: "Specific recommendations",
     body: "You get 3–7 off-the-shelf AI or SaaS tools matched to your workflows, budget, and existing stack.",
   },
   {
     title: "A plan you can use",
-    body: "Your report includes an effort vs. impact matrix, a 4-day quick-start plan, financial impact analysis, and a 30-minute review call.",
+    body: "Your report includes an effort vs. impact matrix, a four-day quick-start plan, financial impact analysis, and a 30-minute review call.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function BookPage() {
             <div className="px-4 sm:px-6 pt-6 pb-2 flex items-center justify-between border-b border-ink-100">
               <Wordmark asLink={false} logoClassName="h-[5.25rem]" />
               <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-ink-500">
-                Available times · Cal.com
+                Calendar availability · Cal.com
               </span>
             </div>
 

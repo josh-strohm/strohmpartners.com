@@ -7,7 +7,7 @@ import { homeContent } from "@/content/home";
 export function OutcomesScroller() {
   const { outcomes } = homeContent;
 
-  // Duplicate the phrases for a seamless infinite marquee
+  // Repeat the phrases so the marquee can loop continuously
   const marqueeItems = [...outcomes, ...outcomes];
 
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -34,7 +34,7 @@ export function OutcomesScroller() {
     setCycleWidth(totalWidth / 2);
   }, []);
 
-  // Measure width for seamless looping (run after layout settles)
+  // Measure the track after the layout settles
   useEffect(() => {
     const measure = () => {
       requestAnimationFrame(() => {

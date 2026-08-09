@@ -36,8 +36,8 @@ export function Footer() {
           <div className="md:col-span-4 flex flex-col gap-3">
             <Wordmark />
             <p className="text-ink-200 max-w-md text-[15px] leading-relaxed">
-              AI help for small and medium businesses. I find the work slowing
-              you down, recommend what fits, and help you put it in place.
+              Practical AI help for small and medium businesses. I find the work
+              slowing you down, recommend what fits, and help you put it in place.
             </p>
             <div className="flex items-center gap-2 text-sm text-ink-300">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-success animate-pulse" />
@@ -73,9 +73,9 @@ export function Footer() {
             © {new Date().getFullYear()} Strohm Partners LLC. All rights reserved.
           </p>
           <p className="text-xs text-ink-300 font-mono uppercase tracking-wider">
-            Small Business Big Leverage
+            Practical help for small businesses
           </p>
-        </div>
+</div>
       </Container>
     </footer>
   );

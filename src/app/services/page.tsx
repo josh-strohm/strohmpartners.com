@@ -9,17 +9,17 @@ import { withCanonical } from "@/lib/seo";
 export const metadata: Metadata = withCanonical("/services", {
   title: "Services",
   description:
-    "Start with a $999 AI Tools Assessment, then get help with process redesign, automation, knowledge systems, custom workflows, or ongoing support."
+    "Start with a $999 AI Tools Assessment, then get help with process redesign, automation, knowledge systems, custom workflows, or ongoing support.",
 });
 
 const faqs = [
   {
     q: "What happens in the AI Tools Assessment?",
-    a: "We meet on Google Meet for 45 minutes and walk through the way your business runs. I review the conversation, compare the tools that fit, and send a report with 3–7 recommendations, a starting plan, savings estimates, and a 30-minute review call.",
+    a: "We meet on Google Meet for 45 minutes and walk through how your business actually runs. I review the conversation, compare the tools that fit, and send a report with 3–7 recommendations, a starting plan, savings estimates, and a 30-minute review call.",
   },
   {
     q: "What size business is this for?",
-    a: "The sweet spot is 2–20 employees with $500K–$5M in annual revenue. If you are smaller or larger than that, reach out and we can see if the assessment fits.",
+    a: "The best fit is usually a business with 2–20 employees and $500K–$5M in annual revenue. If you are smaller or larger, reach out and we can see whether the assessment makes sense.",
   },
   {
     q: "Do you work with our existing tools and vendors?",
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "What does it cost?",
-    a: "The AI Tools Assessment is $999, paid once. The tools I recommend typically cost about $60 per month combined. Any implementation work is optional, and I give you the price before we start.",
+    a: "The AI Tools Assessment is $999, paid once. The tools I recommend usually cost about $60 per month combined. Any implementation work is optional, and I give you the price before we start.",
   },
   {
     q: "What if you can't find at least 5 hours of savings?",
@@ -59,7 +59,7 @@ export default function ServicesPage() {
             <span className="italic text-accent-300">the way you work.</span>
           </h1>
           <p className="mt-8 text-lg sm:text-xl text-ink-200 max-w-2xl leading-relaxed pretty">
-            The assessment finds where your week is going and gives you a short
+            The assessment shows where your week is going and gives you a short
             list of tools worth trying. When you want help putting them in place,
             I can stay involved through implementation.
           </p>
@@ -129,9 +129,8 @@ export default function ServicesPage() {
                 Want Hermes installed and configured for you?
               </h2>
               <p className="mt-5 text-lg text-ink-200 leading-relaxed pretty max-w-2xl">
-                For businesses or individuals who already know they want an
-                agent, Hermes setup is a direct path to getting it installed,
-                configured, and ready to use.
+                If you already know you want an agent, Hermes setup gives you a
+                direct path to installation, configuration, and a working setup.
               </p>
               <div className="mt-8">
                 <Button href="https://hermes.strohmpartners.com" variant="secondary" size="md">
@@ -150,7 +149,7 @@ export default function ServicesPage() {
           <SectionHeader
             eyebrow="What happens next"
             title="A simple path from the assessment to the work."
-            description="You get the report, choose what to try, and decide whether you want help with the build."
+            description="You get the report, choose what to try, and decide whether you want help putting it in place."
           />
           <ol className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-4 relative">
             <div
@@ -181,10 +180,10 @@ export default function ServicesPage() {
         <Container>
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
             <div className="lg:col-span-4">
-          <SectionHeader
-            eyebrow="Common questions"
-            title="Things people ask me upfront."
-          />
+              <SectionHeader
+                eyebrow="Common questions"
+                title="Things people ask me upfront."
+              />
             </div>
             <div className="lg:col-span-8 flex flex-col gap-3">
               {faqs.map((f) => (

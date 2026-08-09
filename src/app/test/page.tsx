@@ -21,13 +21,13 @@ export default function TestPage() {
         <Container className="relative pt-24 pb-16 sm:pt-32 sm:pb-20">
           <span className="inline-flex items-center gap-2 rounded-full bg-ink-700/60 backdrop-blur px-4 py-1.5 border border-ink-400/20 text-xs font-mono uppercase tracking-[0.18em] text-ink-100">
             <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
-            Test
+            Contact form preview
           </span>
           <h1 className="mt-8 font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.0] text-ink-50 max-w-4xl balance">
-            Form embed <span className="italic text-accent-300">test.</span>
+            Contact form <span className="italic text-accent-300">preview.</span>
           </h1>
           <p className="mt-8 text-lg sm:text-xl text-ink-200 max-w-2xl leading-relaxed pretty">
-            This page loads the inline Strohm contact form embed for testing.
+            This page loads the inline contact form so we can check that it is working.
           </p>
         </Container>
       </section>

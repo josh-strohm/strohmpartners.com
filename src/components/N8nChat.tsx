@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 const WEBHOOK_URL =
   'https://n8n.strohmpartners.com/webhook/fc2b023a-7199-4c36-856e-366d5d355392/chat'
 const TITLE = 'Chat with us'
-const SUBTITLE = 'Strohm Partners · usually replies in a minute'
+const SUBTITLE = 'Usually replies within a minute'
 const BRAND = '#437F9C'
 const BRAND_DARK = '#2f5d74'
 const BRAND_LIGHT = '#a4c4d4'
@@ -79,7 +79,7 @@ export default function N8nChat() {
       if (!res.ok) {
         setMessages((m) => [
           ...m,
-          { text: 'Sorry, something went wrong. Please try again.', who: 'bot' },
+          { text: 'Something went wrong. Please try again.', who: 'bot' },
         ])
         return
       }
@@ -88,7 +88,7 @@ export default function N8nChat() {
     } catch {
       setMessages((m) => [
         ...m,
-        { text: 'Network error. Please try again.', who: 'bot' },
+        { text: 'I could not reach the chat service. Please try again.', who: 'bot' },
       ])
     } finally {
       setBusy(false)
@@ -167,7 +167,7 @@ export default function N8nChat() {
           >
             <input
               type="text"
-              placeholder="Type a message..."
+              placeholder="Type your message..."
               autoComplete="off"
               value={input}
               onChange={(e) => setInput(e.target.value)}
@@ -199,7 +199,7 @@ export default function N8nChat() {
                 transition: 'background .15s ease',
               }}
             >
-              {busy ? '...' : 'Send'}
+              {busy ? 'Sending' : 'Send'}
             </button>
           </form>
         </div>

@@ -7,7 +7,7 @@ import { withCanonical } from "@/lib/seo";
 export const metadata: Metadata = withCanonical("/contact", {
   title: "Contact",
   description:
-    "Get in touch. I read and reply to every message myself, usually within a business day."
+    "Get in touch. I read every message myself and usually reply within one business day."
 });
 
 export default function ContactPage() {

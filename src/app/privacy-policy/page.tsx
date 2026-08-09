@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { LegalPage, buildLegalMetadata } from "@/components/legal/LegalPage";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = buildLegalMetadata(
+export const metadata: Metadata = withCanonical("/privacy-policy", buildLegalMetadata(
   "Privacy Policy",
   "How Strohm Partners collects, uses, discloses, and safeguards your information when you visit our website or interact with our services."
-);
+));
 
 const sections = [
   {

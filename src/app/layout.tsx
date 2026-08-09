@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import ChatWidget from "@/components/ChatWidget";
+import { siteUrl } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,7 +27,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://strohmpartners.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Strohm Partners | Put AI to work on the busywork",
     template: "%s · Strohm Partners",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     description:
       "A 45-minute conversation about the work slowing you down, with 3–7 tools matched to your business.",
     type: "website",
-    url: "https://strohmpartners.com",
+    url: siteUrl,
   },
   twitter: { card: "summary_large_image" },
   icons: {

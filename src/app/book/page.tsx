@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Wordmark } from "@/components/Wordmark";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withCanonical("/book", {
   title: "Book your AI Tools Assessment",
   description:
     "Book your $999 AI Tools Assessment: a 45-minute interview, 3–7 tool prescriptions, a quick-start plan, and a 30-minute review call."
-};
+});
 
 const expectations = [
   {

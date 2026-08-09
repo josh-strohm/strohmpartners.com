@@ -3,12 +3,13 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { CTABand } from "@/components/layout/CTABand";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withCanonical("/about", {
   title: "About",
   description:
     "I'm Josh Strohm. I help small and medium businesses find useful AI tools and put them to work."
-};
+});
 
 const values = [
   {

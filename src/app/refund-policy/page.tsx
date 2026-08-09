@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { LegalPage, buildLegalMetadata } from "@/components/legal/LegalPage";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = buildLegalMetadata(
+export const metadata: Metadata = withCanonical("/refund-policy", buildLegalMetadata(
   "Refund & Cancellation Policy",
   "Our guidelines on billing, milestone approvals, cancellations, and refunds for Strohm Partners services."
-);
+));
 
 const sections = [
   {

@@ -73,7 +73,7 @@ export function Footer() {
             © {new Date().getFullYear()} Strohm Partners LLC. All rights reserved.
           </p>
           <p className="text-xs text-ink-300 font-mono uppercase tracking-wider">
-            Built with care · one business at a time
+            Small Business Big Leverage
           </p>
         </div>
       </Container>

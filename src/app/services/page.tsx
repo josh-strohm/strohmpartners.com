@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { CTABand } from "@/components/layout/CTABand";
+import { Button } from "@/components/ui/Button";
 import { homeContent } from "@/content/home";
 import { withCanonical } from "@/lib/seo";
 
@@ -111,6 +112,34 @@ export default function ServicesPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Hermes setup offer */}
+      <section className="py-20 lg:py-24 border-t border-ink-700/40">
+        <Container>
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-accent-500/15 via-ink-800 to-ink-950 border border-accent-400/30 p-8 sm:p-12 lg:p-16">
+            <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-accent-500/15 blur-3xl" aria-hidden />
+            <div className="relative max-w-3xl">
+              <span className="font-mono text-xs uppercase tracking-[0.2em] text-accent-300">
+                A hands-on option
+              </span>
+              <h2 className="mt-4 font-display text-4xl sm:text-5xl text-ink-50 leading-tight">
+                Want Hermes installed and configured for you?
+              </h2>
+              <p className="mt-5 text-lg text-ink-200 leading-relaxed pretty max-w-2xl">
+                For businesses or individuals who already know they want an
+                agent, Hermes setup is a direct path to getting it installed,
+                configured, and ready to use.
+              </p>
+              <div className="mt-8">
+                <Button href="https://hermes.strohmpartners.com" variant="secondary" size="md">
+                  Explore Hermes setup
+                  <span aria-hidden>↗</span>
+                </Button>
+              </div>
+            </div>
           </div>
         </Container>
       </section>
